@@ -1,0 +1,930 @@
+/**
+ * 会员中心皮肤
+ * 企业 - 湖蓝
+ */
+
+
+/*顶部导航 开始*/
+#usercenter-top-status-bg {background: #333333;}
+#usercenter-top-status {color: #f1f1f1;}
+#usercenter-top-status a {color:#f1f1f1;border-right:1px solid #767676;}
+#usercenter-top-status a:hover {color:#ff7976;}
+#usercenter-top-status-nav {color: #fff;}
+#usercenter-top-status-nav dt a.online div.online-icon {background: url(/img/usercenter/common/bg-all.png) no-repeat -293px -1184px;}
+#usercenter-top-status-nav .trade-time span {color: #ffa865;}
+#usercenter-top-status-nav .quick-search-area h3 {background: #484848;}
+#usercenter-top-status-nav ul {background: #fff;border: 1px solid #a8a8a8;}
+#usercenter-top-status-nav ul li {border-bottom: 1px solid #eee;}
+#usercenter-top-status-nav ul a {color: #535353;border: 1px solid #fff;}
+#usercenter-top-status-nav ul a:hover {color: #fc7941; border: 1px solid #fc7941;}
+#usercenter-top-status-welcome a {border-right: none; border-left: 1px solid #767676;}
+#usercenter-top-status-welcome span {color: #ffa865; margin-right: 11px;}
+#usercenter-top-status-afterlogin a {border: none; font-weight: bold; color: #ffa865;}
+/*顶部导航 结束*/
+
+
+/*快速导航 开始*/
+#usercenter-quick-nav {background: #16bbb7;}
+#usercenter-quick-nav .quick-nav-content li a {color: #fff;border-right: 1px solid #fff;}
+#usercenter-quick-nav .quick-nav-content li a:hover {color: #ffdd3d;}
+/*快速导航 结束*/
+
+
+/*页面中间主体 开始*/
+#usercenter-content {background: #fff;}
+/*页面中间主体 结束*/
+
+
+/*公共尾部 开始*/
+#usercenter-footer {background: #f1f1f1;}
+#usercenter-helper {background: #f1f1f1;}
+#usercenter-helper-weixin p {color: #404040;}
+.usercenter-helper-links {background: #f1f1f1;}
+.usercenter-helper-links h2 {color: #404040;}
+.usercenter-helper-links ul li a {color: #666;}
+.usercenter-helper-links ul li a:hover {color: #ff9242;}
+.usercenter-helper-backtotop {border-left: 1px solid #c4c4c4;}
+#usercenter-bottom {background: #333;color: #d9d9d9;}
+#usercenter-bottom a {color: #fff;}
+#usercenter-links {background: #e5e5e5;}
+#usercenter-links-title {color: #626262;}
+#usercenter-links-content {background: #e5e5e5;}
+#usercenter-links .Cancel {border:1px solid #c2c2c2;}
+/*公共尾部 结束*/
+
+
+/*左侧导航 开始*/
+#usercenter-left-nav {border:1px solid #16bbb7;}
+.usercenter-left-nav dl dd h3 span {color: #000;}
+.usercenter-left-nav dl dd h3 em {background: url("/img/usercenter/common/bg-all.png") no-repeat -230px -1085px;}
+.usercenter-left-nav dl dd h3.active em {background: url("/img/usercenter/common/bg-all.png") no-repeat -297px -1086px;}
+.usercenter-left-nav dl dd h3 .buyers {background: url("/img/usercenter/common/bg-all.png") no-repeat -144px -1074px;}
+.usercenter-left-nav dl dd h3 .seller {background: url("/img/usercenter/common/bg-all.png") no-repeat -382px -1075px;}
+.usercenter-left-nav dl dd h3 .management {background: url("/img/usercenter/common/bg-all.png") no-repeat -469px -1074px;}
+.usercenter-left-nav dl dd ul {border-bottom: 1px solid #16bbb7;}
+.usercenter-left-nav dl dd ul li:hover {color:#15afab;}
+.usercenter-left-nav dl dd ul li:hover a {color:#15afab;}
+.usercenter-left-nav dl dd ul li a {color: #000000;}
+.usercenter-left-nav dl dd ul li a:hover {color:#15afab;}
+.usercenter-left-nav dl dd ul li.current {background: #16bbb7; color:#fff;}
+.usercenter-left-nav dl dd ul li.current a,
+.usercenter-left-nav dl dd ul li.current span{color:#fff;}
+/*左侧导航 结束*/
+
+
+/*右侧主体内容-公共部分 开始*/
+.right-container {border: 1px solid #c2c2c2;color:#434343;}
+.right-container .block {border-bottom: 1px solid #eee;}
+.right-container .block h2 { border-bottom: 1px solid #eee;}
+.right-container .block h2 p {color: #333;border-bottom: 3px solid #16bbb7;}
+/*右侧主体内容-公共部分 结束*/
+
+
+/*页面-会员中心首页 开始*/
+#my-info .my-info-content ul {color: #626262;}
+#my-info .my-info-content li em {color: #e74b3c;}
+#my-info .my-info-content li i {background: url(/img/usercenter/common/bg-all.png) no-repeat -84px -32px;}
+#my-info .my-info-content li i.has {background: url(/img/usercenter/common/bg-all.png) no-repeat -183px -32px;}
+#my-info .my-info-content li i.has p {color: #e74b3c;}
+#my-info .my-info-content li i.has p a{color: #e74b3c;}
+#my-agency .my-agency-content li p a {color: #a30000;}
+#my-points .my-points-content li em {color: #cb2624;}
+#my-points .my-points-content dd.exchange-gifts a {background: url(/img/usercenter/common/bg-all.png) no-repeat -476px -56px;}
+#my-points .my-points-content dd.exchange-gifts a:hover {background: url(/img/usercenter/common/bg-all.png) no-repeat -476px -109px;}
+#my-points .my-points-content dd.income-statement a {background: url(/img/usercenter/common/bg-all.png) no-repeat -639px -57px;}
+#my-points .my-points-content dd.income-statement a:hover {background: url(/img/usercenter/common/bg-all.png) no-repeat -639px -108px;}
+#my-cart .my-cart-content li.text a {background: url(/img/usercenter/common/bg-all.png) no-repeat -403px -223px;}
+#my-cart .my-cart-content li.text a:hover {background: url(/img/usercenter/common/bg-all.png) no-repeat -403px -291px;}
+#help-center .help-center-content a p {color: #434343;}
+#help-center .help-center-content a.help1{background: url(/img/usercenter/common/bg-all.png) no-repeat -85px -791px;}
+#help-center .help-center-content a.help1:hover{background: url(/img/usercenter/common/bg-all.png) no-repeat -85px -508px;}
+#help-center .help-center-content a.help2{background: url(/img/usercenter/common/bg-all.png) no-repeat -254px -791px;}
+#help-center .help-center-content a.help2:hover{background: url(/img/usercenter/common/bg-all.png) no-repeat -254px -508px;}
+#help-center .help-center-content a.help3{background: url(/img/usercenter/common/bg-all.png) no-repeat -429px -791px;}
+#help-center .help-center-content a.help3:hover{background: url(/img/usercenter/common/bg-all.png) no-repeat -429px -508px;}
+#help-center .help-center-content a.help4{background: url(/img/usercenter/common/bg-all.png) no-repeat -604px -791px;}
+#help-center .help-center-content a.help4:hover{background: url(/img/usercenter/common/bg-all.png) no-repeat -604px -508px;}
+#help-center .help-center-content a.help5{background: url(/img/usercenter/common/bg-all.png) no-repeat -774px -791px;}
+#help-center .help-center-content a.help5:hover{background: url(/img/usercenter/common/bg-all.png) no-repeat -774px -508px;}
+#help-center .help-center-content a.help6{background: url(/img/usercenter/common/bg-all.png) no-repeat -85px -933px;}
+#help-center .help-center-content a.help6:hover{background: url(/img/usercenter/common/bg-all.png) no-repeat -85px -648px;}
+#help-center .help-center-content a.help7{background: url(/img/usercenter/common/bg-all.png) no-repeat -254px -933px;}
+#help-center .help-center-content a.help7:hover{background: url(/img/usercenter/common/bg-all.png) no-repeat -254px -648px;}
+#help-center .help-center-content a.help8{background: url(/img/usercenter/common/bg-all.png) no-repeat -429px -933px;}
+#help-center .help-center-content a.help8:hover{background: url(/img/usercenter/common/bg-all.png) no-repeat -429px -648px;}
+#help-center .help-center-content a.help9{background: url(/img/usercenter/common/bg-all.png) no-repeat -604px -933px;}
+#help-center .help-center-content a.help9:hover{background: url(/img/usercenter/common/bg-all.png) no-repeat -604px -648px;}
+#help-center .help-center-content a.help10{background: url(/img/usercenter/common/bg-all.png) no-repeat -774px -933px;}
+#help-center .help-center-content a.help10:hover{background: url(/img/usercenter/common/bg-all.png) no-repeat -774px -648px;}
+#my-cart .my-cart-content .my-cart-table {border: 1px solid #a3c7c7;}
+#my-cart .my-cart-content .my-cart-table th {background: #f3ffff;color: #056284;}
+#my-cart .my-cart-content .my-cart-table td {border-top: 1px solid #eee;color: #555;}
+#my-cart .my-cart-content .my-cart-table tr.first td {border-top: 1px solid #a3c7c7;}
+#my-cart .my-cart-content .my-cart-table td em {color: #e60219;}
+#my-cart .my-cart-content .my-cart-table a.go-pay {background: url(/img/usercenter/common/user-bg-all.png) no-repeat -458px -1049px;}
+#my-cart .my-cart-content .my-cart-table a.go-pay:hover {background: url(/img/usercenter/common/user-bg-all.png) no-repeat -458px -1097px;}
+/*页面-会员中心首页 结束*/
+
+
+/*下拉框配色 开始*/
+.d-select-area .d-select-title {border: 1px solid #ccc;}
+.d-select-area .d-select-title em {background: #9ce0df;}
+.d-select-area .d-select-body {border: 1px solid #9ce0df;}
+.d-select-area .d-select-content dl dd:hover {background: #a6e6e5;color: #fff;border: 1px solid #66afae; }
+.d-select-area .d-select-scrollbar {background: #dbfbfb;}
+.d-select-area .d-select-slider {background: #90d4d3;}
+
+.d-select-type-search .d-select-search {border: 1px solid #cea972;}
+.d-select-type-search .d-select-search em {background: #ffd97c;}
+.d-select-type-search .d-select-body,
+.d-select-type-list .d-select-body {border: 1px solid #cea972;color: #502d07;}
+.d-select-type-search .d-select-content dl dd:hover,
+.d-select-type-list .d-select-content dl dd:hover {background: #ff8d8c;color: #fff;border: 1px solid #da471b; }
+.d-select-type-search .d-select-content dl dd.selected,
+.d-select-type-list .d-select-content dl dd.selected {background: #ff8d8c;color: #fff;border: 1px solid #da471b; }
+.d-select-type-search .d-select-scrollbar,
+.d-select-type-list .d-select-scrollbar {background: #f2dec3;}
+.d-select-type-search .d-select-slider,
+.d-select-type-list .d-select-slider {background: #c9a887;}
+.d-select-type-search dl dt {background: #f9f1e5;}
+.d-select-type-select .d-select-title em i {background: url("/img/front/common/select-arrow.png") no-repeat;}
+.d-select-type-search .d-select-search em i {background: url(/img/usercenter/common/user-bg-all.png) no-repeat -547px -220px;}
+/*下拉框配色 结束*/
+
+
+/*列表共通 开始*/
+.block .d-tabel-searchterms{height: 92px;line-height: 92px;}
+.d-tabel-searchterms .productslist-publish-a:hover{background: url(/img/usercenter/common/user-bg-all.png) no-repeat -45px -92px;}
+.d-tabel-searchterms .search-input{width:206px;height: 30px;border:1px solid #c2c2c2;border-radius:3px 0 0 3px;vertical-align:middle;text-indent: 1em;}
+.d-tabel-searchterms label{margin-left: 60px;font-size:14px;*vertical-align:center;}
+.d-tabel-searchterms input.search-input{line-height:30px;margin-left: 63px;}
+.d-tabel-searchterms .usercenter-search-submit{width:47px;height:32px;border:1px solid #c2c2c2;border-radius:0 3px 3px 0;border-left:none;vertical-align:middle;margin-left: -4px;*margin-left: -5px;background: #9ce0df url(/img/usercenter/common/user-bg-all.png) no-repeat -432px -219px;*border:none;}
+.d-table-list table thead tr{background:#f7ffff;height: 44px;border-top:2px solid #e3fbfb;border-bottom: 2px solid #e3fbfb;font-size:16px;color: #046381;}
+.d-table-list table tbody tr.last td{border-bottom: 2px solid #e3fbfb;}
+.d-table-list table thead tr th{font-size:14px;font-weight:bold;vertical-align: middle;*border-top:2px solid #e3fbfb;*border-bottom: 2px solid #e3fbfb;}
+.d-table-list table tbody tr td{height:68px;font-size:14px;vertical-align: middle;border-bottom:1px solid #f0f0f0;color:434343;}
+.d-table-list table tbody tr td .lookfor{width:33px;height:29px;background:url(/img/usercenter/common/user-bg-all.png) no-repeat -115px -177px;}	
+.d-table-list table tbody tr td .lookfor:hover{background:url(/img/usercenter/common/user-bg-all.png) no-repeat -115px -223px;}
+.d-table-list table tbody tr td .newlookfor{width:25px;height:24px;background:url(/img/usercenter/common/user-bg-all.png) no-repeat -115px -4165px;}
+.d-table-list table tbody tr td .newlookfor:hover{background:url(/img/usercenter/common/user-bg-all.png) no-repeat -115px -4227px;}
+.d-table-list table tbody tr td .gotopay{width:25px;height:25px;background:url(/img/usercenter/common/user-bg-all.png) no-repeat -195px -4165px;}
+.d-table-list table tbody tr td .gotopay:hover{background:url(/img/usercenter/common/user-bg-all.png) no-repeat -195px -4227px;}
+.d-table-list table tbody tr td .waitfordelivery{width:25px;height:25px;background:url(/img/usercenter/common/user-bg-all.png) no-repeat -278px -4165px;}
+.d-table-list table tbody tr td .waitfordelivery:hover{background:url(/img/usercenter/common/user-bg-all.png) no-repeat -278px -4227px;}
+.d-table-list table tbody tr td .Edit{width:33px;height:29px;background:url(/img/usercenter/common/user-bg-all.png) no-repeat -35px -178px;}
+.d-table-list table tbody tr td .Edit:hover{background:url(/img/usercenter/common/user-bg-all.png) no-repeat -35px -224px;}
+.d-table-list table tbody tr td .deleteimg_a{width:33px;height:29px;background:url(/img/usercenter/common/user-bg-all.png) no-repeat -211px -177px;}
+.d-table-list table tbody tr td .deleteimg_a:hover{background:url(/img/usercenter/common/user-bg-all.png) no-repeat -211px -223px;}
+/*列表共通 结束*/
+
+
+/*列表-客服 开始*/
+.block .tabel-operation{width:980px;height: 56px;margin:20px auto 0;background: #f9f9f9;}
+.block .tabel-operation #checkall{margin-left: 21px;}
+.block .tabel-operation label.checkall-label{font-size:14px;margin-left: 4px;-webkit-user-select: none;-moz-user-select: none;-ms-user-select: none;-o-user-select: none;user-select: none;}
+.block .tabel-operation #delete-all-img{width:33px;height:29px;margin-left:6px;vertical-align:middle;background:url(/img/usercenter/common/user-bg-all.png) no-repeat -211px -179px;}
+.block .tabel-operation #delete-all-img:hover{background:url(/img/usercenter/common/user-bg-all.png) no-repeat -211px -225px;}
+.block .tabel-operation span{font-size: 14px;}
+.block .tabel-operation .usercenter-transaction{margin-left: 220px;}
+.block .tabel-operation .usercenter-transaction span{color: #455878;font-weight: bold;}
+.block .tabel-operation span.usercenter-tel{width:147px;height:56px;line-height:56px;display:inline-block;*zoom:1;*display:inline;margin-left:60px;font-style:italic;font-weight:bold;text-align: right;background:url(/img/usercenter/common/user-bg-all.png) no-repeat -280px -76px;}
+.block .tabel-operation .customer-service{width:123px;height:35px;margin-left: 60px;vertical-align: middle;background:url(/img/usercenter/common/user-bg-all.png) no-repeat -729px -36px;}
+.block .tabel-operation .customer-service:hover{background:url(/img/usercenter/common/user-bg-all.png) no-repeat -729px -104px;}
+/*列表-客服 结束*/
+
+
+/*列表-页码 开始*/
+.right-container .page-div{margin-top:38px;margin-left: 300px;height: 75px;}
+.right-container .inlinecol{color:#82ac22;}
+.right-container .failcol{color:#626262;}
+.right-container .succcol{color:#fa5f02;}
+.paging a {background: #fff;color: #626262;background: url("/img/page-bg.png") no-repeat -300px -448px;}
+.paging .current{color: #fff;background: url("/img/page-bg.png") no-repeat -165px -448px;  }
+.paging .disabled,
+.paging .fisrt-page {color:#fff;  background: url("/img/page-bg.png") no-repeat -45px -448px;}
+#skip-page {background: url("/img/page-bg.png") no-repeat -300px -448px;}
+#page-span-submit {background: url("/img/page-bg.png") no-repeat -396px -447px;}
+#page-span-submit:hover {background: url("/img/page-bg.png") no-repeat -396px -507px;}
+/*列表-页面 结束*/
+
+
+/* 步骤流布局 开始 */
+.d-step li.d-step-fly {background: url("/img/usercenter/common/user-bg-all.png") no-repeat -309px -290px;}
+.d-step li.d-step-finger {background: url("/img/usercenter/common/user-bg-all.png") no-repeat -446px -306px;}
+.d-step li h3 {background: #ffe2b6;color: #7e431b;}
+.d-step li.active h3 {background: #5d6c8d;  color: #fff;}
+.d-step-results em {color: #fb6360;}
+/* 步骤流布局 结束 */
+
+
+/* 表单共通元素 开始 */
+.d-form .d-weight {border: 1px solid #cea972;}
+.d-form .d-weight input {color: #502d07;}
+.d-form .d-weight em {background: #ffd97c;}
+.d-form .d-weight em i {background: url("/img/usercenter/common/user-bg-all.png") no-repeat -608px -219px;}
+.d-form div.d-form-content input[type=text] {border: 1px solid #dedede;}
+.d-form dl.d-form-radio dd i {background: url("/img/usercenter/common/user-bg-all.png") no-repeat -756px -647px;}
+.d-form dl.d-form-radio dd i.checked {background: url("/img/usercenter/common/user-bg-all.png") no-repeat -814px -647px;}
+.d-form label.d-form-left i {color: #cc2628;}
+.d-form div.d-form-content input[type=text].d-error-input {border: 1px solid #ee8615;}
+.d-form .d-error {color: #ee8615;}
+.d-form .d-error i {background: url(/img/usercenter/common/user-bg-all.png) no-repeat -468px -1009px;}
+/* 表单共通元素 结束 */
+
+
+/* 请编辑您发布的招标内容 开始 */
+#add-tender .add-tender-content .add-tender-info textarea {border: 1px solid #cea972;color: #502d07;}
+#add-tender .add-tender-content .add-tender-info .finger {background: url("/img/usercenter/common/user-bg-all.png") no-repeat -446px -306px;}
+#add-tender .add-tender-content .add-tender-info .submit-area input {background: url("/img/usercenter/common/user-bg-all.png") no-repeat -685px -214px;}
+#add-tender .add-tender-content .add-tender-info .submit-area input:hover {background: url("/img/usercenter/common/user-bg-all.png") no-repeat -685px -302px;}
+/* 请编辑您发布的招标内容 结束 */
+
+
+/* 发布产品第一步 开始 */
+#publish-product-first .publish-product-first-content .submit-area input {background: url("/img/usercenter/common/user-bg-all.png") no-repeat -358px -393px;}
+#publish-product-first .publish-product-first-content .submit-area input:hover {background: url("/img/usercenter/common/user-bg-all.png") no-repeat -358px -451px;}
+/* 发布产品第一步 结束 */
+
+
+/* 发布产品第二步 开始 */
+.publish-product-finish-content .kindly-reminder .box {border: 2px solid #f0f0f0;}
+.publish-product-finish-content .kindly-reminder .box h3 {color: #fff;  background: #ffb310;}
+.publish-product-finish-content .kindly-reminder .box h3 i {background: url("/img/usercenter/common/user-bg-all.png") no-repeat -867px -646px;}
+.publish-product-finish-content .kindly-reminder .box li {border-bottom: 1px solid #dedede;color: #555;}
+.publish-product-finish-content .kindly-reminder .online-customer-service a {background: url("/img/usercenter/common/user-bg-all.png") no-repeat -392px -589px;}
+.publish-product-finish-content .base-info a {color: #1d80f7;}
+.publish-product-finish-content .submit-area input[type=submit] {background: url("/img/usercenter/common/user-bg-all.png") no-repeat -941px -634px;}
+.publish-product-finish-content .submit-area input[type=submit]:hover {background: url("/img/usercenter/common/user-bg-all.png") no-repeat -941px -719px;}
+.publish-product-finish-content .imgs-area {background: url("/img/usercenter/publish_product/upload-img-bg.png") no-repeat -16px -170px;}
+.publish-product-finish-content .imgs-area ul li div.img-block {border: 1px solid #c2c2c2;background: #eee;}
+.publish-product-finish-content .imgs-area ul li div.img-block p {color: #4d749f;}
+.publish-product-finish-content .imgs-area ul li div.img-block p i {background: url("/img/usercenter/publish_product/upload-img-bg.png") no-repeat -293px -80px;}
+.publish-product-finish-content .imgs-area ul li div.img-block a.view {background: url("/img/usercenter/publish_product/upload-img-bg.png") no-repeat -15px -10px;}
+.publish-product-finish-content .imgs-area ul li div.img-block a.remove {background: url("/img/usercenter/publish_product/upload-img-bg.png") no-repeat -69px -11px;}
+.publish-product-finish-content .imgs-area em {background: url("/img/usercenter/publish_product/upload-img-bg.png") no-repeat -16px -127px;}
+.publish-product-finish-content .imgs-area em:hover {background: url("/img/usercenter/publish_product/upload-img-bg.png") no-repeat -150px -127px;}
+.publish-product-finish-content .imgs-area em.re-upload {background: url("/img/usercenter/publish_product/upload-img-bg.png") no-repeat -16px -75px;}
+.publish-product-finish-content .imgs-area em.re-upload:hover {background: url("/img/usercenter/publish_product/upload-img-bg.png") no-repeat -151px -75px;}
+.publish-product-finish-content .imgs-area h4 {color: #909090;}
+/* 发布产品第二步 结束 */
+
+
+/* 自定义日期时间插件 开始 */
+.d-time-area {border: 1px solid #ccc;}
+.d-time-area em {background: #9ce0df;}
+.d-time-area em i {background: url(/img/usercenter/common/user-bg-all.png) no-repeat -758px -714px;}
+
+.ui-datepicker.ui-widget-content {border: 1px solid #cdcdcd; border-radius: 3px;}
+.ui-datepicker .ui-widget-content {border: 1px solid #cdcdcd;}
+.ui-datepicker-header.ui-widget-header {background: #16bbb7;color: #fff}
+.ui-datepicker .ui-widget-header .ui-icon {background-image: url("/img/jquery_images/ui-icons_ffffff_256x240.png");}
+.ui-datepicker .ui-state-default {background: #9ce0df;  border: 1px solid #eee;}
+.ui-datepicker .ui-datepicker-buttonpane button {color: #555;}
+.ui-datepicker .ui-state-hover,
+.ui-datepicker .ui-state-highlight {background: #16bbb7;  border: 1px solid #16bbb7;  opacity: 1;}
+.ui-datepicker .ui-state-active {background: #fff;}
+/* 自定义日期时间插件 结束 */
+
+
+/* 订单流程-面包屑 开始 */
+.paylist-breadcrumbs a {color: #000;}
+.paylist-breadcrumbs a:hover{color: #eb6100;}
+.paylist-breadcrumbs span {color: #7d7d7d;}
+/* 订单流程-面包屑 结束 */
+
+
+/* 订单流程-支付页 开始 */
+.paylist-content .block {border: 2px solid #8ec1ff;}
+.paylist-content .block h2 {border-bottom: 1px solid #eee;}
+.paylist-content .block h2 p {border-bottom: 3px solid #16bbb7;}
+.paylist-step-pay {background: url(/img/usercenter/common/user-bg-all.png) no-repeat -73px -1198px;}
+.paylist-step-delivery {background: url(/img/usercenter/common/user-bg-all.png) no-repeat -72px -1256px;}
+.paylist-step-finish {background: url(/img/usercenter/common/user-bg-all.png) no-repeat -72px -1371px;}
+.paylist-step p.current {background: url(/img/usercenter/common/user-bg-all.png) no-repeat -254px -1049px;}
+.order-state-info {background: #fff5ec; border: 1px solid #fec472; color: #555;}
+.order-state-info li em {color: #db504b;}
+.order-state-info li p {color: #000;}
+.order-state-info a#cacel-order {color: #1d80f8;}
+.order-state-info .detail-area a.detail-order {background: url(/img/usercenter/common/user-bg-all.png) no-repeat -63px -1489px;}
+.order-state-info .detail-area a.detail-order:hover {background: url(/img/usercenter/common/user-bg-all.png) no-repeat -63px -1537px;}
+.order-state-info .detail-area a.detail-delivery {background: url(/img/usercenter/common/user-bg-all.png) no-repeat -63px -1647px;}
+.order-state-info .detail-area a.detail-delivery:hover {background: url(/img/usercenter/common/user-bg-all.png) no-repeat -63px -1692px;}
+.order-state-info .detail-area dl {border: 2px solid #f7b652;background: #fff;color: #111;}
+.order-state-info .detail-area dl dt {background: url(/img/usercenter/common/user-bg-all.png) no-repeat -214px -1650px;}
+.order-state-info .detail-area dl dd {border-bottom: 1px solid #fbd9a9;}
+.order-state-info .detail-area a.want-take-btn {background: url(/img/usercenter/common/user-bg-all.png) no-repeat -985px -1986px;}
+.order-state-info .detail-area a.want-take-btn:hover {background: url(/img/usercenter/common/user-bg-all.png) no-repeat -985px -2054px;}
+.order-state-info .detail-area a.delegate-price-btn{background: url(/img/usercenter/common/user-bg-all.png) no-repeat -795px -1986px;}
+.order-state-info .detail-area a.delegate-price-btn:hover {background: url(/img/usercenter/common/user-bg-all.png) no-repeat -795px -2054px;}
+.order-state-info .online-service {background: url(/img/usercenter/common/user-bg-all.png) no-repeat -729px -36px;}
+.order-state-info .online-service:hover {background: url(/img/usercenter/common/user-bg-all.png) no-repeat -729px -104px;}
+.order-state-info .contact-number b {background: url(/img/usercenter/common/user-bg-all.png) no-repeat -287px -88px;}
+#line-payment .line-payment-blank li h4 {color: #f95e01;}
+#line-payment .line-payment-blank li i {background: url(/img/usercenter/common/user-bg-all.png) no-repeat -228px -1490px;}
+#line-payment .line-payment-blank li a.show-linepay-btn {background: url(/img/usercenter/common/user-bg-all.png) no-repeat -415px -1490px;}
+#line-payment .line-payment-blank li a.show-linepay-btn:hover {background: url(/img/usercenter/common/user-bg-all.png) no-repeat -415px -1572px;}
+#line-payment .line-payment-blank li em {color: #6c3a09;}
+#line-payment .line-payment-voucher h3.wait-upload {background: url(/img/usercenter/common/user-bg-all.png) no-repeat -612px -1098px;}
+#line-payment .line-payment-voucher h3.has-upload {background: url(/img/usercenter/common/user-bg-all.png) no-repeat -612px -1049px;}
+#line-payment .line-payment-voucher li label span {color:#c92727;}
+#line-payment .line-payment-voucher li .imgs-area {background: url("/img/usercenter/publish_product/upload-img-bg.png") no-repeat -16px -170px;}
+#line-payment .line-payment-voucher li .imgs-area dl dd div.img-block {border: 1px solid #c2c2c2;background: #eee;}
+#line-payment .line-payment-voucher li .imgs-area dl dd div.img-block p {color: #4d749f;}
+#line-payment .line-payment-voucher li .imgs-area dl dd div.img-block p i {background: url("/img/usercenter/publish_product/upload-img-bg.png") no-repeat -293px -80px;}
+#line-payment .line-payment-voucher li .imgs-area dl dd div.img-block a.view {background: url("/img/usercenter/publish_product/upload-img-bg.png") no-repeat -15px -10px;}
+#line-payment .line-payment-voucher li .imgs-area dl dd div.img-block a.remove {background: url("/img/usercenter/publish_product/upload-img-bg.png") no-repeat -69px -11px;}
+#line-payment .line-payment-voucher li .imgs-area dl dd div.img-block a.proof {background: url("/img/usercenter/publish_product/upload-img-bg.png") no-repeat -234px -11px;}
+#line-payment .line-payment-voucher li .imgs-area em {background: url("/img/usercenter/publish_product/upload-img-bg.png") no-repeat -16px -127px;}
+#line-payment .line-payment-voucher li .imgs-area em:hover {background: url("/img/usercenter/publish_product/upload-img-bg.png") no-repeat -150px -127px;}
+#line-payment .line-payment-voucher li .imgs-area em.proof {background: url("/img/usercenter/publish_product/upload-img-bg.png") no-repeat -293px -127px;}
+#line-payment .line-payment-voucher li .imgs-area em.proof:hover {background: url("/img/usercenter/publish_product/upload-img-bg.png") no-repeat -427px -127px;}
+#line-payment .line-payment-voucher li .imgs-area em.re-upload {background: url("/img/usercenter/publish_product/upload-img-bg.png") no-repeat -16px -75px;}
+#line-payment .line-payment-voucher li .imgs-area em.re-upload:hover {background: url("/img/usercenter/publish_product/upload-img-bg.png") no-repeat -151px -75px;}
+#line-payment .line-payment-voucher li .imgs-area h4 {color: #909090;}
+#line-payment .line-payment-voucher li textarea {border: 1px solid #f0f0f0;color: #626262;}
+#line-payment .line-payment-voucher li input#upperbutton{background: url(/img/usercenter/common/user-bg-all.png) no-repeat -803px -1045px;color: #fff;}
+#line-payment .line-payment-voucher li input#upperbutton:hover{background: url(/img/usercenter/common/user-bg-all.png) no-repeat -803px -1113px;}
+#line-payment .line-payment-voucher li p.error{color: #fc8c3b;}
+#online-payment li a.blank {border: 1px solid #c9c9c9;}
+#online-payment li a.blank:hover,
+#online-payment li a.blank.selected{border: 1px solid #fb6360;}
+#online-payment li a.more {background: url(/img/usercenter/common/user-bg-all.png) no-repeat -541px -2330px;}
+#online-payment li a.more:hover {background: url(/img/usercenter/common/user-bg-all.png) no-repeat -541px -2389px;}
+#online-payment h4 {color: #693908;}
+#online-payment a.online-pay-btn {background: url(/img/usercenter/common/user-bg-all.png) no-repeat -684px -1490px;}
+#online-payment a.online-pay-btn:hover {background: url(/img/usercenter/common/user-bg-all.png) no-repeat -684px -1572px;}
+/* 订单流程-支付页 结束 */
+
+
+/* 共通-提货列表信息 开始*/
+.d-delivery-list h2 i.icon-takeof {background: url(/img/usercenter/common/user-bg-all.png) no-repeat -151px -1872px;}
+.d-delivery-list h2 i.icon-sendof {background: url(/img/usercenter/common/user-bg-all.png) no-repeat -225px -1872px;}
+.d-delivery-list h2 i.icon-doprice {background: url(/img/usercenter/common/user-bg-all.png) no-repeat -70px -1872px;}
+.d-delivery-list h2 span {color: #909090;}
+.d-delivery-list .d-delivery-list-box {border: 2px solid #c2c2c2;  color: #303030;}
+.d-delivery-list ul {background: #e2f6f7; color: #056281;}
+.d-delivery-list dl dt {border-top: 1px solid #c2c2c2;}
+.d-delivery-list dl dt p.spotExpansion a.icon-up {background: url(/img/usercenter/common/user-bg-all.png) no-repeat -518px -1882px;}
+.d-delivery-list dl dt p.spotExpansion a.icon-up:hover {background: url(/img/usercenter/common/user-bg-all.png) no-repeat -518px -1924px;}
+.d-delivery-list dl dt p.spotExpansion a.icon-down {background: url(/img/usercenter/common/user-bg-all.png) no-repeat -431px -1882px;}
+.d-delivery-list dl dt p.spotExpansion a.icon-down:hover {background: url(/img/usercenter/common/user-bg-all.png) no-repeat -431px -1923px;}
+.d-delivery-list dl dt p.spotExpansion b {background: url(/img/usercenter/common/user-bg-all.png) no-repeat -364px -1930px;}
+.d-delivery-list .div-table {border: 1px solid #dedede;background: #fff;}
+.d-delivery-list .div-table th { background: #ffefd6;  color: #242625;}
+.d-delivery-list .div-table td {border-bottom: 1px solid #eee;}
+.d-delivery-list .div-table td.deal-state em.red {color: #ca2625;}
+.d-delivery-list .div-table td.deal-state em.green {color: #74a20b;}
+.d-delivery-list .div-table td.deal-state i {background: url(/img/usercenter/common/user-bg-all.png) no-repeat -590px -1908px;}
+.d-delivery-list .div-table td.deal-state i div.tip b {background: url(/img/usercenter/common/user-bg-all.png) no-repeat -367px -1891px;}
+.d-delivery-list .div-table td.deal-state i div.tip strong {border: 1px solid #ea6850; background: #fef2f4;  color: #7d0020;}
+.d-delivery-list .div-table td.deal-state i.finish {background: url(/img/usercenter/common/user-bg-all.png) no-repeat -310px -1893px;}
+.d-delivery-list .div-table td.deal-state i.finish:hover {background: url(/img/usercenter/common/user-bg-all.png) no-repeat -310px -1931px;}
+.d-delivery-list .div-table td.operate a.del-delivery {background: url(/img/usercenter/common/user-bg-all.png) no-repeat -221px -181px;}
+.d-delivery-list .div-table td.operate a.del-delivery:hover {background: url(/img/usercenter/common/user-bg-all.png) no-repeat -221px -227px;}
+.d-delivery-list .div-table td.operate a.go-pay {background: url(/img/usercenter/common/user-bg-all.png) no-repeat -795px -1882px;}
+.d-delivery-list .div-table td.operate a.go-pay:hover {background: url(/img/usercenter/common/user-bg-all.png) no-repeat -795px -1924px;}
+.d-delivery-list .div-table td.operate a.pay-schedule {background: url(/img/usercenter/common/user-bg-all.png) no-repeat -659px -1882px;}
+.d-delivery-list .div-table td.operate a.pay-schedule:hover {background: url(/img/usercenter/common/user-bg-all.png) no-repeat -659px -1924px;}
+.d-delivery-list .div-table td.operate a.proof-delivery {background: url(/img/usercenter/common/user-bg-all.png) no-repeat -1019px -1882px;}
+.d-delivery-list .div-table td.operate a.proof-delivery:hover {background: url(/img/usercenter/common/user-bg-all.png) no-repeat -1019px -1924px;}
+.d-delivery-list .div-table td.operate a.wait-receipt {background: url(/img/usercenter/common/user-bg-all.png) no-repeat -918px -1882px;}
+.d-delivery-list .div-table td.operate a.wait-receipt:hover {background: url(/img/usercenter/common/user-bg-all.png) no-repeat -918px -1924px;}
+.d-delivery-list .div-table td.operate b {color: #b5b5b5;}
+.d-delivery-list .div-table td b {color: #b5b5b5;}
+/* 共通-提货列表信息 结束*/
+
+
+/* 弹出层-我要提货 开始*/
+.d-dialog-delivery h4 {color: #ffa767;}
+.d-dialog-delivery h4 em.tips {color: #fb6360;}
+.d-dialog-delivery a.choose-a-block {color: #81511c; border: 1px solid #996c33;}
+.d-dialog-delivery a.choose-a-block div {border: 2px solid #fff;}
+.d-dialog-delivery a.choose-a-selected { border: 1px solid #97c6ff;  background: #e5f5ff;  color: #3465a0;}
+.d-dialog-delivery a.choose-a-selected div {border: 2px solid #97c6ff;}
+.d-dialog-delivery a.choose-a-selected i {background: url(/img/usercenter/common/user-bg-all.png) no-repeat -74px -2016px;}
+.d-dialog-delivery input {border: 1px solid #dbc1b1;}
+.d-dialog-delivery .d-ppt dl dd {background: #eee;}
+.d-dialog-delivery .d-ppt dl dd.active {background: #dedede;}
+.d-dialog-delivery .d-ppt dl dd.prev a {background: url(/img/usercenter/common/user-bg-all.png) no-repeat -202px -1990px;}
+.d-dialog-delivery .d-ppt dl dd.next a {background: url(/img/usercenter/common/user-bg-all.png) no-repeat -262px -1990px;}
+.d-dialog-delivery .weight-choose li a.choose-a-selected i {background: url(/img/usercenter/common/user-bg-all.png) no-repeat -137px -2022px;}
+.d-dialog-delivery .odd-weight-choose li a.choose-a-selected i {background: url(/img/usercenter/common/user-bg-all.png) no-repeat -137px -2022px;}
+.d-dialog-delivery .box {border: 2px solid #dbc1b1;}
+.d-dialog-delivery .box h4 {background: #fff;color: #ffa767;}
+.d-dialog-delivery .d-form div.d-form-content input[type=text] {border: 1px solid #dbc1b1;}
+.d-dialog-delivery h5 em {color: #fa5f02;}
+.d-dialog-delivery .submit-area input[type=submit] {background: #ff7171; color: #fff;}
+/* 弹出层-我要提货 结束*/
+
+
+/*企业会员 企业认证 开始*/
+.enterprise-auth-box .enterprise-auth-form .enterprise-auth-bgimg{background: url("/img/usercenter/common/user-bg-all.png") no-repeat -50px -3246px;}
+.enterprise-auth-box .enterprise-auth-form ul li span{color: #f47e00;}
+.enterprise-auth-box .enterprise-auth-form ul li span i{background: url("/img/usercenter/common/user-bg-all.png") no-repeat -468px -1009px;}
+.enterprise-auth-box .enterprise-auth-form ul li label em{color:#f44336;}
+.enterprise-auth-box .enterprise-auth-form ul li input{border:1px solid #c2c2c2;}
+.enterprise-auth-box .enterprise-auth-form ul li.longlenth #brief-area{border:1px solid #c2c2c2;}
+.enterprise-auth-box .enterprise-auth-image .upload-information-title{background:#16bbb7;color:#fff;}
+.enterprise-auth-box .enterprise-auth-image .upload-information-title span{background: #fff;}
+.enterprise-auth-box .enterprise-auth-image .upload-information-title span.gt{background: url("/img/usercenter/common/user-bg-all.png") no-repeat -431px -3153px;}
+.enterprise-auth-box .enterprise-auth-image .imgs-area ul li>p a{color:#046381;}
+.enterprise-auth-box .enterprise-auth-image .imgs-area ul li div.img-block {background: #eee;}
+.enterprise-auth-box .enterprise-auth-image .imgs-area ul li div.img-block p {color: #4d749f;}
+.enterprise-auth-box .enterprise-auth-image .imgs-area ul li div.img-block p i {background: url("/img/usercenter/publish_product/upload-img-bg.png") no-repeat -293px -80px;}
+.enterprise-auth-box .enterprise-auth-image .imgs-area ul li div.img-block a.view {background: url("/img/usercenter/publish_product/upload-img-bg.png") no-repeat -15px -10px;}
+.enterprise-auth-box .enterprise-auth-image .imgs-area ul li div.img-block a.remove {background: url("/img/usercenter/publish_product/upload-img-bg.png") no-repeat -69px -11px;}
+.enterprise-auth-box .enterprise-auth-image .imgs-area em { background: url("/img/usercenter/publish_product/upload-img-bg.png") no-repeat -16px -127px;}
+.enterprise-auth-box .enterprise-auth-image .imgs-area em:hover {background: url("/img/usercenter/publish_product/upload-img-bg.png") no-repeat -150px -127px;}
+.enterprise-auth-box .enterprise-auth-image .imgs-area em.re-upload {background: url("/img/usercenter/publish_product/upload-img-bg.png") no-repeat -16px -75px;}
+.enterprise-auth-box .enterprise-auth-image .imgs-area em.re-upload:hover {background: url("/img/usercenter/publish_product/upload-img-bg.png") no-repeat -151px -75px;}
+.enterprise-auth-box .enterprise-auth-image .uploadimg-message .uploadimg-message-text em{background: url("/img/usercenter/common/user-bg-all.png") no-repeat -366px -3550px;}
+.enterprise-auth-box .enterprise-auth-image .uploadimg-message .customer-certification{background: url("/img/usercenter/common/user-bg-all.png") no-repeat -528px -3414px;}
+.enterprise-auth-box .enterprise-auth-image .uploadimg-message .customer-certification:hover{background: url("/img/usercenter/common/user-bg-all.png") no-repeat -528px -3455px;}
+.enterprise-auth-box .enterprise-auth-image #submit-bg{background: url("/img/usercenter/common/user-bg-all.png") no-repeat -526px -3299px;}
+.enterprise-auth-box .enterprise-auth-image #submit-bg:hover{background: url("/img/usercenter/common/user-bg-all.png") no-repeat -528px -3358px;}
+#upload-documents-dialog .button{background: url("/img/usercenter/common/user-bg-all.png") no-repeat -967px -3103px;}
+#upload-documents-dialog .button:hover{background: url("/img/usercenter/common/user-bg-all.png") no-repeat -969px -3145px;}
+.certification-audit .certification-audit-img{background: url('/img/usercenter/enterprise-auth-personimg.png') no-repeat;}
+.certification-audit .certification-audit-text>h3{color: #7e7a73;}
+.certification-audit .certification-audit-text>h4{color: #7e7a73;}
+.certification-audit .certification-audit-text .certification-audit-div-a>h5{color: #7e7a73;}
+.certification-audit .certification-audit-text .certification-audit-div-a>a{background: url(/img/usercenter/common/user-bg-all.png) no-repeat -725px -3414px;}
+.certification-audit .certification-audit-text .certification-audit-div-a>a:hover{background: url(/img/usercenter/common/user-bg-all.png) no-repeat -725px -3456px;}
+/*企业会员 企业认证 结束*/
+
+
+/*企业会员 上传资源单 开始*/
+.upload-resource-box .upload-resource-left{border-right:1px solid #eeeeee;}
+.upload-resource-box .upload-resource-left .upload-file-box dd{border:1px solid #fff;}
+.upload-file-box .upload-file .upload-file-left{background: url("/img/usercenter/common/user-bg-all.png") no-repeat -182px -3088px;}
+.upload-file-box .upload-file #upload-file-a{background: url("/img/usercenter/common/user-bg-all.png") no-repeat -1083px -3101px;}
+.upload-file-box .upload-file #upload-file-a p{color: #000000;}
+.upload-file-box .upload-file-success .upload-success-left{background: url("/img/usercenter/common/user-bg-all.png") no-repeat -82px -3088px;}
+.upload-file-box .upload-file-success .upload-success-right h5{color: #0091ea;}
+.upload-file-box .upload-success-right #re-upload-a{background: url("/img/usercenter/common/user-bg-all.png") no-repeat -659px -3102px; }
+.upload-file-box .upload-success-right #re-upload-a:hover{background: url("/img/usercenter/common/user-bg-all.png") no-repeat -659px -3145px;}
+.upload-resource-box .upload-resource-left .upload-information{min-height: 639px;}
+.upload-resource-left .upload-information .upload-information-title{background:#16bbb7;color:#fff;}
+.upload-resource-left .upload-information .upload-information-title span{background: #fff;}
+.upload-resource-left .upload-information .upload-information-title span.gt{background: url("/img/usercenter/common/user-bg-all.png") no-repeat -431px -3153px;}
+.upload-information .upload-information-content ul li .information-content-right>span{color: #fcaa59;}
+.upload-information .upload-information-content ul li .information-content-right #company-name{border:1px solid #c2c2c2;}
+.upload-information .upload-information-content ul li .information-content-textarea{color:#000000;border:1px solid #c2c2c2;}
+.upload-information .upload-information-content ul li p.error{color: #fcaa59;}
+.resource-single-attribute .information-content-right table{border:1px solid #c2c2c2;}
+.resource-single-attribute .information-content-right table thead{background:#ff7976;color: #fff;}
+.resource-single-attribute .information-content-right table tbody td{border-right:1px solid #c2c2c2;border-bottom:1px solid #c2c2c2;}
+.resource-single-attribute .information-content-right table tbody td.product-specifications{background:url(/img/usercenter/common/user-bg-all.png) no-repeat -857px -3294px;}
+.information-content-right table tbody td.product-specifications ul{border:1px solid #c2c2c2;background:#fff;}
+.information-content-right table tbody td.product-specifications ul li:hover{background:#ffe4e4;}
+.information-content-right table tbody td.product-specifications ul li em{background: url("/img/usercenter/common/user-bg-all.png") no-repeat -492px -3094px;}
+.information-content-right table tbody td.product-specifications ul li em.checked{background: url("/img/usercenter/common/user-bg-all.png") no-repeat -466px -3094px}
+.information-content-right table tbody td.modify-price-radio b.price-up{background: url("/img/usercenter/common/user-bg-all.png") no-repeat -500px -3125px;}
+.information-content-right table tbody td.modify-price-radio b.price-up.checked{background: url("/img/usercenter/common/user-bg-all.png") no-repeat -474px -3126px;}
+.information-content-right table tbody td.modify-price-radio b.price-eq{background: url("/img/usercenter/common/user-bg-all.png") no-repeat -499px -3176px;}
+.information-content-right table tbody td.modify-price-radio b.price-eq.checked{background: url("/img/usercenter/common/user-bg-all.png") no-repeat -473px -3177px;}
+.information-content-right table tbody td.modify-price-radio b.price-dw{background: url("/img/usercenter/common/user-bg-all.png") no-repeat -500px -3153px}
+.information-content-right table tbody td.modify-price-radio b.price-dw.checked{background: url("/img/usercenter/common/user-bg-all.png") no-repeat -474px -3153px}
+.upload-information .upload-information-content ul li .information-content-right .remarks{color:#1976d2;}
+.upload-information .upload-information-content ul li .information-content-right .submit-publish{background: url("/img/usercenter/common/user-bg-all.png") no-repeat -786px -3102px;}
+.upload-information .upload-information-content ul li .information-content-right .submit-publish:hover{background: url("/img/usercenter/common/user-bg-all.png") no-repeat -787px -3145px;}
+.upload-information .upload-information-content ul li .information-content-right.information-content-submit{margin-top:26px;}
+.upload-resource-box .upload-resource-right .resource-recommend-style{border:3px solid #f0f0f0;}
+.upload-resource-right .resource-recommend-style .recommend-style-title{color: #fff;background:#ff7976;}
+.resource-recommend-style .recommend-style-title em{background: url("/img/usercenter/common/user-bg-all.png") no-repeat -383px -3153px;}
+.upload-resource-right .resource-recommend-style p a{color: #fa5f02;}
+.upload-resource-right .resource-recommend-style .resource-recommend-button span b{background: url("/img/usercenter/common/user-bg-all.png") no-repeat -396px -3097px;}
+.upload-resource-right .resource-recommend-style .resource-recommend-button .download_link{background: url("/img/usercenter/common/user-bg-all.png") no-repeat -562px -3105px;}
+.upload-resource-right .resource-recommend-style .resource-recommend-button .download_link:hover{background: url("/img/usercenter/common/user-bg-all.png") no-repeat -562px -3151px;}
+.upload-resource-right .resource-recommend-style .recommend-style-title.orange{background:#ffb311;}
+.upload-resource-right .resource-recommend-style.message ul li{border-bottom:1px solid #c2c2c2;}
+.upload-resource-box .upload-resource-right .resource-contact-service{color: #757575;}
+/*企业会员 上传资源单 结束*/
+
+
+/*企业会员 出售中的产品 开始*/
+.d-tabel-searchterms .productslist-publish-a{background: url(/img/usercenter/common/user-bg-all.png) no-repeat -45px -38px;}
+.d-tabel-searchterms .productslist-publish-a:hover{background: url(/img/usercenter/common/user-bg-all.png) no-repeat -45px -91px;}
+/*企业会员 出售中的产品 结束*/
+
+/*企业会员 商城订单的高级管理 开始*/
+#my-seller-order .usercenter-publish-statuinput { background: url(../../img/usercenter/my_seller_order/select-bg.png);}
+#my-seller-order .usercenter-publish-statuinput span {color: #626262;}
+#my-seller-order .usercenter-publish-statuselect {background: #FFFFFF;}
+#my-seller-order .usercenter-publish-statuselect li { color: #626262;}
+#my-seller-order .usercenter-publish-statuselect li:hover {background: #626262;color: #FFFFFF;}
+#my-seller-order #privatemessage{border:4px solid #f0f0f0;}
+#my-seller-order #Search{border-bottom:2px solid #f0f0f0;}
+#my-seller-order #Search-titleinput{border:1px solid #c2c2c2;}
+#my-seller-order #Search-starttime em{background: #ffa765;border: 1px solid #c2c2c2;color: #fff;}
+#my-seller-order #Search-starttime input{border:1px solid #c2c2c2;}
+#my-seller-order #Search-line{background: url(../../img/usercenter/private_message/underline.png);}
+#my-seller-order #Search-endtime em{background: #ffa765;border: 1px solid #c2c2c2;color: #fff;}
+#my-seller-order #Search-endtime input{border:1px solid #c2c2c2;}
+#my-seller-order #searchinput{border:1px solid #c7c7c7;}
+#my-seller-order #Query{background:url(../../img/usercenter/my_seller_order/Query.png);}
+#my-seller-order #Query:hover{/*background:url(../../img/usercenter/private_message/Query-hover.png);*/}
+#my-seller-order .myseller-content thead tr{background: #fafafa;}
+#my-seller-order .myseller-content tbody tr:hover{background: #fff7f0;}
+#my-seller-order .myseller-content tbody tr td{border-bottom:1px solid #f0f0f0;}
+#my-seller-order .tr-totalAmount{color: #c92727;}
+#my-seller-order .tr-bond{color: #ffa767;}
+#my-seller-order .color-blank{color:#626262;}
+#my-seller-order .color-blue{color:#4c749c;}
+#my-seller-order a.lookfor{color:#6e8cad;}
+#my-seller-order a.lookfor:hover{color:#ffa767;}
+#my-seller-order #selectAll a{color: #386896;}
+#my-seller-order #selectAll a:hover{color: #ffa767;}
+#my-seller-order #delete-submit{background:url(../../img/usercenter/private_message/delete.png);}
+#my-seller-order #delete-submit:hover{background:url(../../img/usercenter/private_message/delete-hoverr.png);}
+#my-seller-order .ui-draggable-handle{background: none;}.ui-dialog-title{color: #fff;}
+#my-seller-order #privatenav .fontcolor{color: #626262;}
+#my-seller-order #privatenav a{color: #82ac22;}
+#my-seller-order #privatenav a:hover{color: #ffa566;}
+/*企业会员 商城订单的高级管理 结束*/
+
+
+/*企业会员 站内信 开始*/
+.my-private-message .usercenter-search-submit{background: url(/img/usercenter/common/user-bg-all.png) no-repeat -668px -1646px;}
+.my-private-message .usercenter-search-submit:hover{background: url(/img/usercenter/common/user-bg-all.png) no-repeat -669px -1694px;}
+.my-private-message  .d-table-list .table-td .td-border-left .table-td-border-left{border-right:1px solid #16bbb7;}
+.my-private-message  .d-table-list .table-td:hover{background: #f7f6f6;}
+.my-private-message  .d-table-list .table-td .td-border-right .table-td-border-right{border-left:1px solid #16bbb7;}
+.my-private-message .d-table-list table tbody tr td{border-top:1px solid #cfd8dc;border-bottom:1px solid #cfd8dc;}
+.my-private-message  .d-table-list .table-td-border-bottom{border-right:1px solid #cfd8dc;border-bottom:1px solid #cfd8dc;}
+.my-private-message .mark_a{background: url(/img/usercenter/common/user-bg-all.png) no-repeat -268px -1645px;}
+.my-private-message .mark_a:hover{background: url(/img/usercenter/common/user-bg-all.png) no-repeat -268px -1694px;}
+.my-private-message .d-table-list .deleteimg_a{background: url(/img/usercenter/common/user-bg-all.png) no-repeat -387px -1646px;}
+.my-private-message .d-table-list .deleteimg_a:hover{background: url(/img/usercenter/common/user-bg-all.png) no-repeat -386px -1694px;}
+.my-private-message .Cancel_a{background: url(/img/usercenter/common/user-bg-all.png) no-repeat -776px -1645px;}
+.my-private-message .Cancel_a:hover{background: url(/img/usercenter/common/user-bg-all.png) no-repeat -776px -1694px;}
+.my-private-message .d-table-list .table-td-mkp{background: url(/img/usercenter/common/user-bg-all.png) no-repeat -609px -1653px;}
+.my-private-message .d-table-list .table-td-read{background: url(/img/usercenter/common/user-bg-all.png) no-repeat -535px -1655px;}
+.my-private-message .d-table-list .table-td-readed{background: url(/img/usercenter/common/user-bg-all.png) no-repeat -493px -1655px;}
+.my-private-message .d-table-list .table-td-mark a{color: #f44336;}
+.my-private-message .d-table-list .table-readtitle a{color:#000000;}
+#title-dialog .private-message-div {border: 2px solid #dbc1b1;}
+#title-dialog .private-message-div p{font-size:14px;line-height:20px;}
+#title-dialog .private-message-div h4 {background: #fff; color: #ffa767;}
+#title-dialog .private-dialog-link a{color:#fff;}
+#title-dialog .private-dialog-link .addpriatemark{background:#ff817e;}
+#title-dialog .private-dialog-link .addpriatemark:hover,#title-dialog .private-dialog-link .removepriatemark:hover{background:#f46966;}
+#title-dialog .private-dialog-link .removepriatemark{background:#ff817e;}
+#title-dialog .private-dialog-link .closemessagedig{background:#a0a0a0;}
+#title-dialog .private-dialog-link .closemessagedig:hover{background:#90a4ae;}
+/*企业会员 站内信 结束*/
+
+
+/*企业会员  安全中心 开始*/
+.right-container .security-center-box .security-center-h1{color:#fff;background: url(/img/usercenter/common/user-bg-all.png) no-repeat -348px -2851px;}
+#security-center-degree p{background: url(/img/usercenter/common/user-bg-all.png) no-repeat -345px -2716px;}
+#security-center-degree p.Low{background: url(/img/usercenter/common/user-bg-all.png) no-repeat -345px -2747px;}
+#security-center-degree p.Middle{background: url(/img/usercenter/common/user-bg-all.png) no-repeat -345px -2780px;}
+#security-center-degree p.High{background: url(/img/usercenter/common/user-bg-all.png) no-repeat -345px -2810px;}
+#security-center-degree p em{color:#ff8700;}
+.right-container .security-password-div .style-box label{color: #434343;}
+.right-container .security-password-div .style-box input[type=password]{color:#000;border:1px solid #c2c2c2;}
+.right-container .security-password-div .style-box span{color: #f47e00;background: url(/img/usercenter/common/user-bg-all.png) no-repeat -462px -999px;}
+#security-password-submit{ background: url(/img/usercenter/common/user-bg-all.png) no-repeat -587px -2756px;}
+#security-password-submit:hover{background: url(/img/usercenter/common/user-bg-all.png) no-repeat -587px -2801px;}
+.right-container .security-center-box-right .linkdiv .vertical-line-p{border-left:1px solid #9e9e9e;}
+.right-container .security-center-box-right .linkdiv .qq-bg-link-a{background: url(/img/usercenter/common/user-bg-all.png) no-repeat -360px -2899px;}
+.right-container .security-center-box-right .linkdiv .qq-bg-link-a:hover{background: url(/img/usercenter/common/user-bg-all.png) no-repeat -580px -2899px;}
+.right-container .security-center-box-right .linkdiv .qq-unbind-a{background: url(/img/usercenter/common/user-bg-all.png) no-repeat -808px -2899px;}
+.right-container .security-center-box-right .linkdiv .qq-unbind-a:hover{background: url(/img/usercenter/common/user-bg-all.png) no-repeat -1028px -2899px;}
+.right-container .security-center-box-right .linkdiv .wechat-bg-link-a{background: url(/img/usercenter/common/user-bg-all.png) no-repeat -360px -2954px;}
+.right-container .security-center-box-right .linkdiv .wechat-bg-link-a:hover{background: url(/img/usercenter/common/user-bg-all.png) no-repeat -580px -2954px;}
+.right-container .security-center-box-right .linkdiv .wechat-unbind-a{background: url(/img/usercenter/common/user-bg-all.png) no-repeat -808px -2954px;}
+.right-container .security-center-box-right .linkdiv .wechat-unbind-a:hover{background: url(/img/usercenter/common/user-bg-all.png) no-repeat -1028px -2954px}
+.right-container .security-center-box-right .linkdiv .blog-link-a{background: url(/img/usercenter/common/user-bg-all.png) no-repeat -360px -3008px;}
+.right-container .security-center-box-right .linkdiv .blog-link-a:hover{background: url(/img/usercenter/common/user-bg-all.png) no-repeat -580px -3008px;}
+.right-container .security-center-box-right .linkdiv .blog-unbind-a{background: url(/img/usercenter/common/user-bg-all.png) no-repeat -808px -3008px}
+.right-container .security-center-box-right .linkdiv .blog-unbind-a:hover{background: url(/img/usercenter/common/user-bg-all.png) no-repeat  -1028px -3008px}
+.right-container .security-center-box-right .linkdiv .security-center-service{background: url(/img/usercenter/common/user-bg-all.png) no-repeat -845px -2748px}
+/*企业会员 安全中心 结束*/
+
+
+/*企业会员 我的投标列表 开始*/
+.d-tabel-searchterms .my-bid-a{background: url(/img/usercenter/common/user-bg-all.png) no-repeat -941px -214px;}
+.d-tabel-searchterms .my-bid-a:hover{background: url(/img/usercenter/common/user-bg-all.png) no-repeat -941px -304px;}
+/*企业中心 我的投标列表 结束*/
+
+
+/*卖家订单管理(现货)-订单信息 开始 */
+.trading-orders-content .order-info h3 {color: #29baa9;}
+.trading-orders-content .order-info-content {background: #fffaf6;border: 1px solid #f8eee2;}
+.trading-orders-content .order-info-content ul {border-left: 1px dashed #ded9d5;}
+.trading-orders-content .order-info-content em {color: #ff686f;}
+.trading-orders-content .order-info-content span {color: #57524e}
+.trading-orders-content .order-info-content strong {color: #000;}
+.trading-orders-content .order-info-content ul li.operation .payment-voucher-btn {background: url(/img/usercenter/common/user-bg-all.png) no-repeat -473px -3547px;}
+.trading-orders-content .order-info-content ul li.operation .payment-voucher-btn:hover {background: url(/img/usercenter/common/user-bg-all.png) no-repeat -473px -3618px;}
+.trading-orders-content .order-info-content ul li.operation .confirmation-bond-btn {background: url(/img/usercenter/common/user-bg-all.png) no-repeat -575px -3547px;}
+.trading-orders-content .order-info-content ul li.operation .confirmation-bond-btn:hover {background: url(/img/usercenter/common/user-bg-all.png) no-repeat -575px -3618px;}
+/*卖家订单管理(现货)-订单信息 结束 */
+
+
+/* 卖家订单管理(现货)-提货信息&送货信息 开始 */
+.d-delivery-list .div-table td.deal-state a.view-voucher {background: url(/img/usercenter/common/user-bg-all.png) no-repeat -746px -3555px;}
+.d-delivery-list .div-table td.deal-state a.view-voucher:hover {background: url(/img/usercenter/common/user-bg-all.png) no-repeat -747px -3619px;}
+.d-delivery-list .div-table td.deal-state a.proof-voucher {background: url(/img/usercenter/common/user-bg-all.png) no-repeat -670px -3554px;}
+.d-delivery-list .div-table td.deal-state a.proof-voucher:hover {background: url(/img/usercenter/common/user-bg-all.png) no-repeat -670px -3619px;}
+.d-delivery-list .div-table td.operate a.confirmation-receipt {background: url(/img/usercenter/common/user-bg-all.png) no-repeat -845px -3549px;}
+.d-delivery-list .div-table td.operate a.confirmation-receipt:hover {background: url(/img/usercenter/common/user-bg-all.png) no-repeat -845px -3619px;}
+.d-delivery-list .div-table td.operate a.confirmation-delivery {background: url(/img/usercenter/common/user-bg-all.png) no-repeat -114px -4296px;}
+.d-delivery-list .div-table td.operate a.confirmation-delivery:hover {background: url(/img/usercenter/common/user-bg-all.png) no-repeat -114px -4348px;}
+.d-delivery-list .div-table td.operate a.confirmation-deliver-goods {background: url(/img/usercenter/common/user-bg-all.png) no-repeat -1058px -3549px;}
+.d-delivery-list .div-table td.operate a.confirmation-deliver-goods:hover {background: url(/img/usercenter/common/user-bg-all.png) no-repeat -1060px -3621px;}
+/* 卖家订单管理(现货)-提货信息&送货信息 结束 */
+
+
+/* 卖家订单管理 - 上传提货凭证 开始 */
+#upload-proof-delivery .area {border: 1px solid #eee;background: #f9f9f9;}
+#upload-proof-delivery .area .d-float-left p {border: 1px solid #c2c2c2;  background: #eee;  color: #4d749f;}
+#upload-proof-delivery .area .d-float-left p i {background: url(/img/usercenter/common/user-bg-all.png) no-repeat -409px -3503px;}
+#upload-proof-delivery .area .d-float-left:hover a.upload-view {background: url(/img/usercenter/common/user-bg-all.png) no-repeat -367px -3498px;}
+#upload-proof-delivery .area .operate {border-left: 1px dashed #ccc;}
+#upload-proof-delivery .area .operate a ,
+#upload-proof-delivery .area .operate input[type=button] {color: #fff;}
+#upload-proof-delivery .area .operate a.del-btn {background: #999;}
+#upload-proof-delivery .area .operate a.del-btn:hover {background: #888;}
+#upload-proof-delivery .submit-area a {color: #fff;  background: #ff7271;}
+#upload-proof-delivery .submit-area a:hover {background: #f46c6c;}
+#upload-proof-delivery .ke-button-common {background: #7fb8ff;}
+#upload-proof-delivery .ke-upload-area:hover .ke-button-common {background: #7cb1f3;}
+/* 卖家订单管理 - 上传提货凭证 结束 */
+
+
+/* 卖家订单管理 - 作价信息 开始 */
+.pricing-info .div-table td.operate a.finish-all {background: url(/img/usercenter/common/user-bg-all.png) no-repeat -640px -4105px;}
+.pricing-info .div-table td.operate a.finish-all:hover {background: url(/img/usercenter/common/user-bg-all.png) no-repeat -641px -4140px;}
+.pricing-info .div-table td.operate a.finish-part {background: url(/img/usercenter/common/user-bg-all.png) no-repeat -549px -4106px;}
+.pricing-info .div-table td.operate a.finish-part:hover {background: url(/img/usercenter/common/user-bg-all.png) no-repeat -549px -4141px;}
+.d-delivery-list .div-table td.tips-container .tips i.arrow {background: url(/img/usercenter/common/user-bg-all.png) no-repeat -741px -4112px;}
+.d-delivery-list .div-table td.tips-container .tips dl {background: #ffcdcc;}
+.d-delivery-list .div-table td.tips-container .tips b {color: #1f0707;}
+.d-delivery-list .div-table td.tips-container .tips strong {color: #c7051f;}
+/* 卖家订单管理 - 作价信息 结束 */
+
+
+/* 卖家订单管理 - 弹出层 - 部分作价 开始 */
+#dialog-finish-part .content h4 {color: #ff7171;}
+#dialog-finish-part .content input {border: 1px solid #c6c6c6;}
+#dialog-finish-part .button-area a {color: #fff;}
+#dialog-finish-part .button-area a.sure {background: #ff7474;}
+#dialog-finish-part .button-area a.sure:hover {background: #ff5252;}
+#dialog-finish-part .button-area a.cancel {background: #abb8bf;}
+#dialog-finish-part .button-area a.cancel:hover {background: #90a4ae;}
+/* 卖家订单管理 - 弹出层 - 部分作价 结束 */
+
+
+/* 购物车 开始 */
+#usercenter-shoppingcart{color: #434343;}
+#usercenter-shoppingcart .usershopcar-bg{background:url(/img/usercenter/common/user-bg-all.png) no-repeat -21px -918px;}
+#usercenter-shoppingcart .usershopcar-bg span.usershopcar-bg-txt{background:url(/img/usercenter/common/user-bg-all.png) no-repeat -254px -1044px;}
+#usercenter-shoppingcart .usershopcar-nogoods{border:2px solid #c2c2c2;}
+#usercenter-shoppingcart .userxialeft{background:url(/img/usercenter/common/user-bg-all.png) no-repeat -68px -522px;}
+#usercenter-shoppingcart .userxiaright{color: #7e7a73;}
+#jigouwang a{background:url(/img/usercenter/common/user-bg-all.png) no-repeat -63px -993px;}
+#jigouwang a:hover{background:url(/img/usercenter/common/user-bg-all.png) no-repeat -63px -993px;}
+div.tabchange p span{color:#fff;background:#87c39f;border-bottom:1px solid #87c39f;}
+div.tabchange p span.spancur{background: #fff;color:#5c5c5c;border:2px solid #c2c2c2;}
+.goods-title {border-bottom:1px solid #c2c2c2;}
+.goods-title ul li {color: #046381;}
+.goods-title ul .qx span {color: #046381;}
+.goods-title ul li span {color: #807b77;}
+.goods-order {color: #555;}
+.goods-order ul li a {color: #1d80f8;}
+.goods-list {border: 1px solid #EFEFEF;color: #555;}
+.goods-list .goods-menu1>li {border-bottom: 1px solid #EFEFEF;}
+.deleteimg {color: #4b93f7;background:url(/img/usercenter/common/user-bg-all.png) no-repeat -222px -181px;}
+.deleteimg:hover {  color: #ffbe96;  background:url(/img/usercenter/common/user-bg-all.png) no-repeat -222px -227px;  }
+.link-service {background:url(/img/usercenter/common/user-bg-all.png) no-repeat -286px -1003px;color: #4b93f7;}
+.link-service:hover { color: #ffbe96;  background:url(/img/usercenter/common/user-bg-all.png) no-repeat -337px -1003px;  }
+.goods-list .goods-menu2 .goods-menu2-zl p {color: #000;}
+.goods-list .goods-menu2 .goods-menu2-ddsm {color:#000000;}
+.goods-list .goods-menu2 .goods-menu2-ddsm p span{color: #f44336;}
+.goods-list .goods-menu2 .minus {color:#757575;border: 2px solid #c2c2c2;}
+.goods-list .goods-menu2 .plus {color:#757575;border: 2px solid #c2c2c2;}
+.goods-list .goods-menu2 .ban {color:#ddd;border: 2px solid #ddd;}
+.goods-list .goods-menu1 li.goods-payment {border-top:2px solid #e3fbfb;background-color: #f7ffff;}
+.goods-payment2 li {color: #2f2f2f;}
+.goods-payment2 .jianshu>span,
+.goods-payment2 .weight>span,
+.goods-payment2 .money>span {color: #fd1f0a;}
+.goods-payment2 li input[type="submit"] {background:url(/img/usercenter/common/user-bg-all.png) no-repeat -63px -1049px;}
+.goods-payment2 li input[type="submit"]:hover {  background:url(/img/usercenter/common/user-bg-all.png) no-repeat -63px -1096px;  }
+.goods-payment2 li input[type="submit"].topay {  background: #fb6360;  }
+.goods-payment2 li input[type="submit"].lock {  background: #cfcfcf;  color: #333;  }
+.goods-payment2 li input[type="submit"].toview {  background: #6aadfe;  }
+.goods-delete {color: #555;}
+/* 购物车 结束 */
+
+
+/* 账户信息 开始 */
+#edit-userinfo .block{color: #000;}
+.edit-userinfo-content{background: #f8f8f8;}
+.edit-userinfo-content .edit-userinfo-form{background: #ffffff;  border:1px solid #f2f2f2;}
+.edit-userinfo-content .edit-userinfo-form .edit-userinfo-topimg{background: url(/img/usercenter/common/user-bg-all.png) no-repeat -57px -3734px;}
+.edit-userinfo-content .formstyle span{color:#f47e00;}
+.edit-userinfo-content .formstyle span i{background: url("/img/usercenter/common/user-bg-all.png") no-repeat -468px -1009px;}
+.edit-userinfo-content .formstyle em.red {color: #d86e6e;  }
+.edit-userinfo-content .formstyle em .formstyle-i{background: url(/img/usercenter/common/user-bg-all.png) no-repeat -135px -3722px;}
+.edit-userinfo-content .formstyle a{color:#0099ff;}
+.edit-userinfo-content .formstyle input[type=text]{border:1px solid #c2c2c2;}
+.edit-userinfo-content .formstyle #forminputbox-submit{background: url("/img/usercenter/common/user-bg-all.png") no-repeat -547px -3721px;}
+.edit-userinfo-content .formstyle #forminputbox-submit:hover{  background: url("/img/usercenter/common/user-bg-all.png") no-repeat -547px -3767px;  }
+.edit-userinfo-form .upload-headimg #imgbackground a{background: #000;background-color:rgba(0,0,0,0.8);}
+.edit-userinfo-form .upload-headimg #imgpicture span a{color: #fff;}
+/* 账户信息 结束 */
+
+
+/* 资源单管理 开始 */
+#resource-manage-list {  color:#000000;  }
+.resource-manage-content .resource-manage-detail .resource-manage-img{	background:url(/img/usercenter/common/user-bg-all.png) no-repeat  -41px -3819px;}
+.resource-manage-content .resource-manage-detail>p{color: #616161;}
+.resource-manage-content .resource-manage-detail .number-message{color:#616161;}
+.resource-manage-content .resource-manage-detail .number-message>b{color:#616161;}
+.resource-manage-content .d-table-list .yours-resource-manage{border:1px solid #c2c2c2;}
+.resource-manage-content .please-upload{background:url(/img/usercenter/common/user-bg-all.png) no-repeat  -685px -3827px;}
+.resource-manage-content .people-img{background:url(/img/usercenter/common/user-bg-all.png) no-repeat  -1037px -3722px;}
+.resource-manage-content .opload-now{background:url(/img/usercenter/common/user-bg-all.png) no-repeat  -688px -3956px;}
+.resource-manage-content .opload-now:hover{  background:url(/img/usercenter/common/user-bg-all.png) no-repeat  -688px -4018px;  }
+.resource-manage-content .message-detail-message{border:1px solid #c2c2c2; background: #fafeff;}
+.resource-manage-content .message-detail-message .your-message-title{border-bottom:1px solid #eeeeee;}
+.message-detail-message .your-message-title>div b{background:url(/img/usercenter/common/user-bg-all.png) no-repeat  -537px -3822px;}
+.message-detail-message .your-message-title>p{color:#0091ea;}
+.message-detail-message .message-type-information ul li{border-right:1px solid #eeeeee;  border-bottom:1px solid #eeeeee;}
+.message-detail-message .today-change-price{  border-top:1px solid #eeeeee;  border-bottom:1px solid #eeeeee;color:#fff;background:#ff7e6d;}
+.products-attribute .introduction-scrollbar {background: #fff4f3;}
+.products-attribute  .introduction-slider {background: #ffccbc;}
+.message-detail-message .products-attribute dl dd{border-bottom:1px solid #eeeeee;}
+.message-detail-message .products-attribute dl dd div.low>i.down-i{  background:url(/img/usercenter/common/user-bg-all.png) no-repeat  -474px -3133px;  }
+.message-detail-message .products-attribute dl dd div.low>i.up-i{  background:url(/img/usercenter/common/user-bg-all.png) no-repeat  -474px -3159px;  }
+.message-detail-message  .resource-operation-link .modify-link{background:url(/img/usercenter/common/user-bg-all.png) no-repeat  -541px -3887px;}
+.message-detail-message  .resource-operation-link .modify-link:hover{ background:url(/img/usercenter/common/user-bg-all.png) no-repeat  -542px -3930px;  }
+.message-detail-message  .resource-operation-link .delete-link{background:url(/img/usercenter/common/user-bg-all.png) no-repeat  -541px -3969px;}
+.message-detail-message  .resource-operation-link .delete-link:hover{  background:url(/img/usercenter/common/user-bg-all.png) no-repeat  -542px -4011px;  }
+.tatus-pink{  color:#ff7976;}
+/* 资源单管理 结束 */
+
+
+/* 我的招标 开始 */
+.d-tabel-searchterms .my-tender-a{background: url(/img/usercenter/common/user-bg-all.png) no-repeat -941px -98px;}
+.d-tabel-searchterms .my-tender-a:hover{background: url(/img/usercenter/common/user-bg-all.png) no-repeat -941px -156px;}
+#my-tender .lookford{background: url(/img/usercenter/common/user-bg-all.png) no-repeat -756px -398px;}
+#my-tender .lookfor-link{background:url(/img/usercenter/common/user-bg-all.png) no-repeat  -827px -401px}
+#my-tender .lookfor-link:hover{background:url(/img/usercenter/common/user-bg-all.png) no-repeat  -879px  -401px}
+#my-tender .lookfor-link>b{background: url(/img/usercenter/common/user-bg-all.png) no-repeat -973px -406px;}
+#dialog-publish textarea{background: #fff;  border: 1px solid #dbc1b1;color: #666;}
+#dialog-publish label.must:before {color: #ca2728;}
+#dialog-publish em.mdash {color: #666;}
+#dialog-publish .text-area textarea {border: 1px solid #c2c2c2;}
+#dialog-publish .submit-area input {background: #ff7171;  color: #fff;}
+
+/* 我的招标 结束 */
+
+/*我购买的产品 开始*/
+#my-orderlist .content-state ul li.wait-pay b em{background:url(/img/usercenter/common/user-bg-all.png) no-repeat -556px -4178px;}
+#my-orderlist .content-state ul li.wait-pay b:hover em{background:url(/img/usercenter/common/user-bg-all.png) no-repeat -556px -4203px;}
+#my-orderlist .content-state ul li.wait-view b em{ background:url(/img/usercenter/common/user-bg-all.png) no-repeat -458px -4177px;}
+#my-orderlist .content-state ul li.wait-view b:hover em{background:url(/img/usercenter/common/user-bg-all.png) no-repeat -459px -4201px;}
+#my-orderlist .content-state ul li.wait-take b em{ background:url(/img/usercenter/common/user-bg-all.png) no-repeat -510px -4178px;}
+#my-orderlist .content-state ul li.wait-take b:hover em{background:url(/img/usercenter/common/user-bg-all.png) no-repeat -511px -4203px;}
+#my-orderlist .content-state ul li.finish b em{background:url(/img/usercenter/common/user-bg-all.png) no-repeat -610px -4178px;}
+#my-orderlist .content-state ul li.finish b:hover em{background:url(/img/usercenter/common/user-bg-all.png) no-repeat -610px -4204px;}
+#my-orderlist .content-state ul li.cancel b  em{background:url(/img/usercenter/common/user-bg-all.png) no-repeat -657px -4178px;}
+#my-orderlist .content-state ul li.cancel b:hover  em{background:url(/img/usercenter/common/user-bg-all.png) no-repeat -657px -4203px;}
+#my-orderlist .goods-title {background-color: #e0fbfb;border-top:2px solid #c2f9f9;border-bottom:2px solid #c2f9f9;}
+#my-orderlist .goods-title ul li {color: #046381;}
+#my-orderlist .goods-title ul li span {color: #046381;}
+#my-orderlist .goods-products ul li.orderlist-title ul{border-bottom:1px solid #dcdcdc;}
+#my-orderlist .goods-products ul li.orderlist-title ul li.ordernumber a{color:#010000;}
+#my-orderlist .goods-products ul li.product-list ul{border-bottom:1px solid #dcdcdc;}
+#my-orderlist .goods-products ul li.product-list ul li.product-delete .deleteimg{background: url(/img/usercenter/common/user-bg-all.png) no-repeat  -221px -181px;}
+#my-orderlist .goods-products ul li.product-list ul li.product-delete .deleteimg:hover{background: url(/img/usercenter/common/user-bg-all.png) no-repeat  -221px -227px;}
+#my-orderlist .goods-products ul li.goto-pay ul{background: #fff8f0;border-bottom:2px solid #ffd4a9;}
+#my-orderlist .goods-products ul li.goto-pay ul li.orderlist-deleteimg .delete-orderall{background: url(/img/usercenter/common/user-bg-all.png) no-repeat  -221px -181px;}
+#my-orderlist .goods-products ul li.goto-pay ul li.orderlist-deleteimg .delete-orderall:hover{background: url(/img/usercenter/common/user-bg-all.png) no-repeat  -221px -227px;}
+#my-orderlist .goods-products ul li.goto-pay ul li.ordertext{color: #00cccc;}
+#my-orderlist .goods-products ul li.goto-pay ul li.products-number b{color:#fd1f0a;}
+#my-orderlist .goods-products ul li.goto-pay ul li.products-weight b{color:#fd1f0a;}
+#my-orderlist .goods-products ul li.goto-pay ul li.pay-totalmoney b{color:#fd1f0a;}
+#my-orderlist .goods-products ul li.goto-pay ul li.pay-money .paymoney-link{background: url(/img/usercenter/common/user-bg-all.png) no-repeat  -750px -4160px;}
+#my-orderlist .goods-products ul li.goto-pay ul li.pay-money .paymoney-link:hover{background: url(/img/usercenter/common/user-bg-all.png) no-repeat  -750px -4208px;}
+#my-orderlist .goods-products ul li.goto-pay ul li.pay-money .audit-link{background: url(/img/usercenter/common/user-bg-all.png) no-repeat  -867px -4160px;}
+#my-orderlist .goods-products ul li.goto-pay ul li.pay-money .audit-link:hover{background: url(/img/usercenter/common/user-bg-all.png) no-repeat  -867px -4208px;}
+#my-orderlist .goods-products ul li.goto-pay ul li.pay-money .see-link{background: url(/img/usercenter/common/user-bg-all.png) no-repeat  -954px -4160px;}
+#my-orderlist .goods-products ul li.goto-pay ul li.pay-money .see-link:hover{background: url(/img/usercenter/common/user-bg-all.png) no-repeat  -954px -4208px;}
+#my-orderlist .goods-products ul li.goto-pay ul li.pay-money .delivery-link{background: url(/img/usercenter/common/user-bg-all.png) no-repeat  -1042px -4160px;}
+#my-orderlist .goods-products ul li.goto-pay ul li.pay-money .delivery-link:hover{background: url(/img/usercenter/common/user-bg-all.png) no-repeat  -1042px -4208px;}
+#my-orderlist .my-orderlist-content .pagediv .deleteall-order{background: url(/img/usercenter/common/user-bg-all.png) no-repeat  -221px -181px;}
+#my-orderlist .my-orderlist-content .pagediv .deleteall-order:hover{background: url(/img/usercenter/common/user-bg-all.png) no-repeat  -221px -227px;}
+/*我购买的产品 结束*/
+
+
+/* 提货&作价引导层 开始*/
+.delivery-guide .pic-1 {background: url(/img/usercenter/common/bg-guide.png) no-repeat -0px -64px;}
+.delivery-guide .pic-2 {background: url(/img/usercenter/common/bg-guide.png) no-repeat -50px -716px;}
+.delivery-guide .pic-3 {background: url(/img/usercenter/common/bg-guide.png) no-repeat -0px -1288px;}
+.delivery-guide .operation a.i-know {background: url(/img/usercenter/common/user-bg-all.png) no-repeat -82px -2772px;}
+.delivery-guide .operation a.i-know:hover {background: url(/img/usercenter/common/user-bg-all.png) no-repeat -82px -2908px;}
+/* 提货&作价引导层 结束*/
+
+
+/* 申请发票（添加） 开始 */
+#application-invoice .block{color: #000;}
+.application-invoice-content{background: #f8f8f8;}
+.application-invoice-content .application-invoice-form{background: #ffffff;  border:1px solid #f2f2f2;}
+.application-invoice-content .application-invoice-form .application-invoice-topimg{background: url(/img/usercenter/common/user-bg-all.png) no-repeat -57px -3734px;}
+#application-invoice .d-form textarea {border: 1px solid #dedede;}
+.application-invoice-content .application-invoice-form ul {border-top: 1px dashed #c9c9c9;border-bottom: 1px dashed #c9c9c9;}
+.application-invoice-content .application-invoice-form .remark-area {background: url(/img/usercenter/common/user-bg-all.png) no-repeat -365px -2468px;}
+.application-invoice-content .application-invoice-form .remark-area h4 {color: #f10f11;}
+.application-invoice-content .application-invoice-form .remark-area h4 i {background: url(/img/usercenter/common/user-bg-all.png) no-repeat -498px -2147px;}
+.application-invoice-content .application-invoice-form .remark-area em { color:#ff4301;}
+.application-invoice-content .application-invoice-form .submit-area input[type=submit] {background: url(/img/usercenter/common/user-bg-all.png) no-repeat -261px -2133px;}
+.application-invoice-content .application-invoice-form .submit-area input[type=submit]:hover {background: url(/img/usercenter/common/user-bg-all.png) no-repeat -261px -2204px;}
+/* 申请发票（添加） 结束 */
+
+
+/* 发票申请 开始 */
+#add-import-record .block{color: #000;}
+.add-import-record-content{background: #f8f8f8;}
+.add-import-record-content .add-import-record-form{background: #ffffff;  border:1px solid #f2f2f2;}
+.add-import-record-content .add-import-record-form .add-import-record-topimg{background: url(/img/usercenter/common/user-bg-all.png) no-repeat -57px -3734px;}
+#add-import-record .d-form textarea {border: 1px solid #dedede;}
+.add-import-record-content .add-import-record-form .submit-area input[type=submit] {background: url(/img/usercenter/common/user-bg-all.png) no-repeat -67px -2137px;}
+.add-import-record-content .add-import-record-form .submit-area input[type=submit]:hover {background: url(/img/usercenter/common/user-bg-all.png) no-repeat -67px -2208px;}
+/* 发票申请 结束 */
+
+
+/*汇入记录 开始*/
+#import-record .d-tabel-searchterms .import-record-a { background: url(/img/usercenter/common/user-bg-all.png) no-repeat -1013px -2143px;}
+#import-record .d-tabel-searchterms .import-record-a:hover{background: url(/img/usercenter/common/user-bg-all.png) no-repeat -1013px -2210px;}
+/*汇入记录 结束*/
+
+
+/*财务统计 开始*/
+#financial-statistics .financial-statistics-content .financial-statistics-form .financial-statistics-topimg{background: url("/img/usercenter/common/user-bg-all.png") no-repeat scroll -57px -3734px;}
+#financial-statistics .financial-statistics-content .financial-statistics-form .submit-area input[type='submit']{ background: url("/img/usercenter/common/user-bg-all.png") no-repeat -632px -2143px;}
+#financial-statistics .financial-statistics-content .financial-statistics-form .submit-area input[type='submit']:hover{background: url("/img/usercenter/common/user-bg-all.png") no-repeat -632px -2214px;}
+#financial-statistics .financial-statistics-content .financial-statistics-form .submit-area input[type='reset']{background: url("/img/usercenter/common/user-bg-all.png") no-repeat -757px -2143px;;}
+#financial-statistics .financial-statistics-content .financial-statistics-form .submit-area input[type='reset']:hover{background: url("/img/usercenter/common/user-bg-all.png") no-repeat -757px -2214px;}
+/*财务统计 结束*/
+
+
+/*发票申请(列表) 开始*/
+#my-invoice .d-tabel-searchterms .my-invoice-a { background: url(/img/usercenter/common/user-bg-all.png) no-repeat -891px -2143px;}
+#my-invoice .d-tabel-searchterms .my-invoice-a:hover{background: url(/img/usercenter/common/user-bg-all.png) no-repeat -891px -2210px;}
+/*发票申请(列表) 结束*/
+
+
+/* 汇入预付款付款页面 开始 */
+.recordpay-content .block {border: 2px solid #8ec1ff;}
+.recordpay-content .block h2 {border-bottom: 1px solid #eee;}
+.recordpay-content .block h2 p {border-bottom: 3px solid #16bbb7;}
+.recordpay-breadcrumbs a {color: #000;}
+.recordpay-breadcrumbs a:hover{color: #eb6100;}
+.recordpay-breadcrumbs span {color: #7d7d7d;}
+.recordpay-step-pay {background: url(/img/usercenter/common/user-bg-all.png) no-repeat -66px -2260px;}
+.recordpay-step p.current {background: url(/img/usercenter/common/user-bg-all.png) no-repeat -254px -1049px;}
+.recordpay-content .order-state-info {background: #fff5ec; border: 1px solid #fec472; color: #333;}
+.recordpay-content .order-state-info .color-blue {color: #6bacff;}
+.recordpay-content .order-state-info li em {color: #db504b;}
+.recordpay-content .order-state-info li p {color: #000;}
+.recordpay-content #line-payment .line-payment-blank li h4 {color: #f95e01;}
+.recordpay-content #line-payment .line-payment-blank li i {background: url(/img/usercenter/common/user-bg-all.png) no-repeat -228px -1490px;}
+.recordpay-content #line-payment .line-payment-blank li a.show-linepay-btn {background: url(/img/usercenter/common/user-bg-all.png) no-repeat -415px -1490px;}
+.recordpay-content #line-payment .line-payment-blank li a.show-linepay-btn:hover {background: url(/img/usercenter/common/user-bg-all.png) no-repeat -415px -1572px;}
+.recordpay-content #line-payment .line-payment-blank li em {color: #6c3a09;}
+.recordpay-content #line-payment .line-payment-voucher h3.wait-upload {background: url(/img/usercenter/common/user-bg-all.png) no-repeat -612px -1098px;}
+.recordpay-content #line-payment .line-payment-voucher h3.has-upload {background: url(/img/usercenter/common/user-bg-all.png) no-repeat -612px -1049px;}
+.recordpay-content #line-payment .line-payment-voucher li label span {color:#c92727;}
+.recordpay-content #line-payment .line-payment-voucher li .imgs-area {background: url("/img/usercenter/publish_product/upload-img-bg.png") no-repeat -16px -170px;}
+.recordpay-content #line-payment .line-payment-voucher li .imgs-area dl dd div.img-block {border: 1px solid #c2c2c2;background: #eee;}
+.recordpay-content #line-payment .line-payment-voucher li .imgs-area dl dd div.img-block p {color: #4d749f;}
+.recordpay-content #line-payment .line-payment-voucher li .imgs-area dl dd div.img-block p i {background: url("/img/usercenter/publish_product/upload-img-bg.png") no-repeat -293px -80px;}
+.recordpay-content #line-payment .line-payment-voucher li .imgs-area dl dd div.img-block a.view {background: url("/img/usercenter/publish_product/upload-img-bg.png") no-repeat -15px -10px;}
+.recordpay-content #line-payment .line-payment-voucher li .imgs-area dl dd div.img-block a.remove {background: url("/img/usercenter/publish_product/upload-img-bg.png") no-repeat -69px -11px;}
+.recordpay-content #line-payment .line-payment-voucher li .imgs-area dl dd div.img-block a.proof {background: url("/img/usercenter/publish_product/upload-img-bg.png") no-repeat -234px -11px;}
+.recordpay-content #line-payment .line-payment-voucher li .imgs-area em {background: url("/img/usercenter/publish_product/upload-img-bg.png") no-repeat -16px -127px;}
+.recordpay-content #line-payment .line-payment-voucher li .imgs-area em:hover {background: url("/img/usercenter/publish_product/upload-img-bg.png") no-repeat -150px -127px;}
+.recordpay-content #line-payment .line-payment-voucher li .imgs-area em.proof {background: url("/img/usercenter/publish_product/upload-img-bg.png") no-repeat -293px -127px;}
+.recordpay-content #line-payment .line-payment-voucher li .imgs-area em.proof:hover {background: url("/img/usercenter/publish_product/upload-img-bg.png") no-repeat -427px -127px;}
+.recordpay-content #line-payment .line-payment-voucher li .imgs-area em.re-upload {background: url("/img/usercenter/publish_product/upload-img-bg.png") no-repeat -16px -75px;}
+.recordpay-content #line-payment .line-payment-voucher li .imgs-area em.re-upload:hover {background: url("/img/usercenter/publish_product/upload-img-bg.png") no-repeat -151px -75px;}
+.recordpay-content #line-payment .line-payment-voucher li .imgs-area h4 {color: #909090;}
+.recordpay-content #line-payment .line-payment-voucher li textarea {border: 1px solid #f0f0f0;color: #626262;}
+.recordpay-content #line-payment .line-payment-voucher li input#upperbutton{background: url(/img/usercenter/common/user-bg-all.png) no-repeat -803px -1045px;color: #fff;}
+.recordpay-content #line-payment .line-payment-voucher li input#upperbutton:hover{background: url(/img/usercenter/common/user-bg-all.png) no-repeat -803px -1113px;}
+.recordpay-content #line-payment .line-payment-voucher li p.error{color: #fc8c3b;}
+.recordpay-content #online-payment li a.blank {border: 1px solid #c9c9c9;}
+.recordpay-content #online-payment li a.blank:hover,
+.recordpay-content #online-payment li a.blank.selected{border: 1px solid #fb6360;}
+.recordpay-content #online-payment li a.more {background: url(/img/usercenter/common/user-bg-all.png) no-repeat -541px -2330px;}
+.recordpay-content #online-payment li a.more:hover {background: url(/img/usercenter/common/user-bg-all.png) no-repeat -541px -2389px;}
+.recordpay-content #online-payment h4 {color: #693908;}
+.recordpay-content #online-payment a.online-pay-btn {background: url(/img/usercenter/common/user-bg-all.png) no-repeat -684px -1490px;}
+.recordpay-content #online-payment a.online-pay-btn:hover {background: url(/img/usercenter/common/user-bg-all.png) no-repeat -684px -1572px;}
+/* 汇入预付款付款页面 结束 */

@@ -1,0 +1,145 @@
+//
+// 弹出层
+// --------------------------------------------------
+
+// PHP数据库操作，返回提示结果
+// -------------------------
+#flashMessage {
+  display: none;
+  padding: 2em 2em 0;
+  text-align: center;
+  font-size: 14px;
+}
+
+
+// 通用
+// -------------------------
+.ui-dialog {
+  z-index:1008;
+  overflow: visible;
+  padding: 0;
+  border-radius : 0;
+
+  .ui-dialog-titlebar {
+    border-radius : 0;
+    font-weight: normal;
+    border: none;
+    font-size: 14px;
+    padding: .5em 1em;
+
+    .ui-dialog-titlebar-close {
+      position:absolute;
+      top: 20px;
+      right: 10px;
+      z-index: 1001;
+      height: 12px;
+      width: 12px;
+      background: url("/img/dialog/close-bg.png") no-repeat -27px -17px;
+      border: none;
+
+      &:hover {
+        background: url("/img/dialog/close-bg.png") no-repeat -27px -44px;
+      }
+
+      .ui-icon-closethick,
+      .ui-button-text{
+        display: none;
+      }
+    }
+
+  }
+
+  .ui-dialog-content {
+    padding: 0;
+  }
+
+  .ui-dialog-buttonpane {
+    border: none;
+    padding: 30px 40px;
+
+    .ui-dialog-buttonset {
+      float: none;
+    }
+  }
+
+  .ui-dialog-bottom {
+    padding: 30px 40px;
+
+    a {
+      @extend %inline-block;
+      padding: 5px 10px;
+      text-align: center;
+      vertical-align: middle;
+      cursor: pointer;
+      white-space: nowrap;
+      border-radius: 4px;
+      font-size:14px;
+      margin-right: 10px;
+    }
+  }
+
+  // ShowMsg
+  .msgbox-content {
+    padding: 30px 40px 0;
+
+    .msgbox-text {
+      font-size:14px;
+      color: #434343;
+    }
+  }
+
+}
+
+
+// 黑色版
+// -------------------------
+.dialog-style-dark {
+  border: 10px solid #7b7778;
+
+  .ui-dialog-titlebar {
+    background: #2d2d2d;
+  }
+
+  .ui-dialog-bottom {
+    a {
+      &.btn-dialog-sure {
+        color: #fff;
+        background: #333;
+      }
+
+      &.btn-dialog-cancel {
+        color: #000;
+      }
+    }
+  }
+
+}
+
+
+// 蓝色版
+// -------------------------
+.dialog-style-blue {
+  border: 5px solid #cfcfcf;
+
+  .ui-dialog-titlebar {
+    background: #cde0f9;
+
+    .ui-dialog-title {
+      color: #484747;
+    }
+  }
+
+  .ui-dialog-bottom {
+    a {
+      &.btn-dialog-sure {
+        color: #fff;
+        background: #333;
+      }
+
+      &.btn-dialog-cancel {
+        color: #000;
+      }
+    }
+  }
+
+}

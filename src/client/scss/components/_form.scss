@@ -1,0 +1,195 @@
+//
+// 表单
+// --------------------------------------------------
+
+
+/* 会员中心
+========================================================================== */
+.d-form {
+  textarea {
+    padding: 6px;
+    resize: none;
+  }
+
+  .d-weight {
+    border-radius: 3px;
+    width: 150px;
+    height: 30px;
+    line-height: 30px;
+    position: relative;
+
+    input {
+      width: 115px;
+      height: 29px;
+      line-height: 29px;
+      text-indent: 6px;
+    }
+    em {
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 35px;
+      height: 30px;
+      i {
+        display: block;
+        width: 35px;
+        height: 30px;
+      }
+    }
+  }
+
+  ul li {
+    height: 62px;
+    line-height: 32px;
+  }
+
+  .d-form-rows2-1,
+  .d-form-rows2-2 {
+    width: 50%;
+  }
+  .d-form-rows2-1 {
+    float: left;
+  }
+  .d-form-rows2-2 {
+    margin-left: 50%;
+  }
+
+  label.d-form-left {
+    display: block;
+    float: left;
+    height: 32px;
+    font-size: 14px;
+    position: relative;
+
+    i {
+      position: absolute;
+      top: 2px;
+      left: -12px;
+    }
+  }
+
+  div.d-form-content {
+    position: relative;
+
+    input[type=text] {
+      height: 30px;
+      line-height:30px;
+      text-indent: 0.5em;
+      margin: 0;
+    }
+    input[type=radio] {
+      margin: 2px 0 0 12px;
+    }
+  }
+
+  .d-error {
+    display: none;
+    font-size: 14px;
+    line-height: 1em;
+    padding: 4px 0;
+
+    i {
+      @extend %inline-block;
+      width: 15px;
+      height: 15px;
+      vertical-align: text-top;
+    }
+  }
+
+  dl.d-form-radio dd {
+    @extend %inline-block;
+    cursor: pointer;
+
+    i {
+      @extend %inline-block;
+      width: 20px;
+      height: 20px;
+      vertical-align: middle;
+      margin: 0 10px 0 20px;
+    }
+
+    label {
+      vertical-align: middle;
+      font-size: 14px;
+      cursor: pointer;
+    }
+  }
+}
+
+
+/* 海淘
+========================================================================== */
+.form-style-haitao {
+
+  label {
+    display: block;
+    float: left;
+    width: 6em;
+    line-height: 38px;
+    font-size: 14px;
+    text-align: center;
+    vertical-align: middle;
+    *vertical-align: top;
+    *padding-top: 10px;
+    *padding-bottom: 10px;
+
+    i {
+      padding-left: 4px;
+      color: #db0720;
+    }
+
+  }
+
+  .d-form-content {
+    margin: 0 0 30px 7em;
+    position: relative;
+
+    .d-error {
+      position: absolute;
+      left: 0;
+      top: 44px;
+      color: #ff9242;
+      display: none;
+    }
+
+    input[type=text],
+    textarea {
+      background: #f1f2f2;
+    }
+
+    input[type=text] {
+      width: 292px;
+      padding-left: 1em;
+      height: 38px;
+      line-height: 38px;
+    }
+
+    textarea {
+      width: 280px;
+      height: 80px;
+      line-height: 1.5em;
+      padding: 1em;
+      resize: none;
+      vertical-align: top;
+    }
+
+  }
+
+  .d-form-submit {
+    text-align: center;
+
+    input[type=submit] {
+      width: 112px;
+      height: 45px;
+      background: #f0795c;
+      border: none;
+      color: #fff;
+      font-size: 16px;
+      font-weight: bold;
+    }
+
+  }
+
+
+}

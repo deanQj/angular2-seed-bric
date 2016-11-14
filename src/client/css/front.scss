@@ -1,0 +1,47 @@
+/* 浏览器统一
+========================================================================== */
+
+@import "../scss/../scss/base/normalize";
+
+
+/* VENDORS - 第三方&重定义
+========================================================================== */
+
+@import "../scss/vendors/jquery-ui.1.10.4.min";
+@import "../scss/vendors-extensions/jquery-ui.custom";
+
+
+/* HELPERS - 工具
+========================================================================== */
+
+@import "../scss/helpers/variables";
+@import "../scss/helpers/functions";
+@import "../scss/helpers/placeholders";
+@import "../scss/helpers/mixins";
+
+
+/* BASE - 共通
+========================================================================== */
+
+@import "../scss/base/main";
+
+
+/* LAYOUT - 布局
+========================================================================== */
+
+@import "../scss/layout/_front";
+
+
+/* COMPONENTS - 零件
+========================================================================== */
+
+@import "../scss/components/buttons";
+@import "../scss/components/areas";
+@import "../scss/components/dialog_front";
+@import "../scss/components/select";
+@import "../scss/components/form";
+@import "../scss/components/cue";
+
+
+/* themes - 皮肤
+========================================================================== */

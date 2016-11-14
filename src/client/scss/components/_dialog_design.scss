@@ -1,0 +1,536 @@
+//
+// 弹出层 - 店铺装修页特有
+// --------------------------------------------------
+
+
+// 布局添加
+// --------------------------------------------------
+
+#dec-layout-dialog{
+  ul{
+    //width:540px;
+    padding:20px 30px 0;
+    overflow: hidden;
+    li{
+      width:172px;
+      height:176px;
+      float:left;
+      &.blank {
+        width:30px;
+      }
+      div.sel-div{
+        width:164px;
+        height:122px;
+        border:4px solid #ffffff;
+        position:relative;
+        &:hover{
+          border:4px solid #fdfda6;
+        }
+        &.div-1{
+          background: url(/img/usercenter/shops/dialog-design.png) no-repeat -22px -28px;
+        }
+        &.div-2{
+          background: url(/img/usercenter/shops/dialog-design.png) no-repeat -218px -28px;
+        }
+        &.div-3{
+          background: url(/img/usercenter/shops/dialog-design.png) no-repeat -410px -28px;
+        }
+        &.div-4{
+          background: url(/img/usercenter/shops/dialog-design.png) no-repeat -22px -185px;
+        }
+        &.div-5{
+          background: url(/img/usercenter/shops/dialog-design.png) no-repeat -218px -185px;
+        }
+        &.div-6{
+          background: url(/img/usercenter/shops/dialog-design.png) no-repeat -22px -185px;
+        }
+        .children-div{
+          width:170px;
+          height:128px;
+          position: absolute;
+          top:-4px;
+          left:-4px;
+          &.sel{
+            background: url(/img/usercenter/shops/dialog-design.png) no-repeat -22px -350px;
+          }
+        }
+      }
+      p{
+        height:46px;
+        line-height:46px;
+        text-align: center;
+        font-size:14px;
+        color:#434343;
+        i{
+          vertical-align: center;
+        }
+        em{
+          vertical-align: center;
+          color:#ec6941;
+        }
+      }
+    }
+  }
+}
+
+
+// 弹出层 - 共通样式
+// --------------------------------------------------
+
+.dec-module-config {
+  .tabs-title {
+    height: 38px;
+    padding-left: 30px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #dedede;
+
+    li {
+      float: left;
+      width: 102px;
+      height: 14px;
+      padding: 6px 0;
+      margin: 11px 5px 0 0;
+      text-align: center;
+      border: 1px solid #dedede;
+      background: #f0f0f0;
+      color: #656565;
+      cursor: pointer;
+
+      &.active {
+        background: #fff;
+        border-bottom: none;
+        padding: 7px 0 7px;
+        margin: 10px 5px 0 0;
+        cursor: default;
+      }
+    }
+
+  }
+
+  .tabs-content {
+    li {
+      visibility: hidden;
+      display: none;
+
+      &.active {
+        visibility: visible;
+        display: block;
+      }
+    }
+  }
+
+  .skin {
+    padding: 0 10px;
+    h3 {
+      padding: 7px 14px;
+      border-bottom: 1px solid #ccc;
+    }
+
+    .block {
+      padding: 7px 14px 10px;
+
+      label {
+        margin-left: 7px;
+      }
+
+      input[type=text] {
+        border: 1px solid #c1c1c1;
+        line-height: 24px;
+        text-indent: 1em;
+        vertical-align: middle;
+      }
+
+      .width-small {
+        width: 80px;
+      }
+
+    }
+
+  }
+
+  .btn-up, .btn-down, .btn-del {
+    @extend %inline-block;
+    width: 11px;
+    height: 13px;
+    margin-right: 5px ;
+
+    &.disabled {
+      cursor: not-allowed;
+    }
+  }
+  .btn-up {
+    background: url("/img/usercenter/shops/design-bg.png") no-repeat -72px -170px;
+
+    &.disabled {
+      background: url("/img/usercenter/shops/design-bg.png") no-repeat -72px -186px;
+    }
+  }
+  .btn-down {
+    background: url("/img/usercenter/shops/design-bg.png") no-repeat -97px -169px;
+
+    &.disabled {
+      background: url("/img/usercenter/shops/design-bg.png") no-repeat -97px -185px;
+    }
+  }
+  .btn-del {
+    background: url("/img/usercenter/shops/design-bg.png") no-repeat -123px -171px;
+    margin-right: 0;
+
+    &.disabled {
+      background: url("/img/usercenter/shops/design-bg.png") no-repeat -123px -187px;
+    }
+  }
+
+}
+
+
+// 商品推荐
+// --------------------------------------------------
+.dec-module-config-recommend {
+
+  .custom {
+    padding: 20px 38px 0;
+
+    .recommend-operate {
+      a {
+        @extend %inline-block;
+        width: 68px;
+        height: 24px;
+        line-height: 24px;
+        text-align: center;
+        background: #f96;
+        color: #fff;
+        margin-right: 12px;
+
+        &.btn-recommend-delAll {
+          background: #999;
+        }
+      }
+    }
+
+    table {
+      text-align: center;
+      color: #5e5e5e;
+    }
+
+    .recommend-table-title {
+      margin-top: 8px;
+
+      th {
+        background: #e9e9e9;
+        border: 1px solid #e9e9e9;
+        padding: 8px 0;
+      }
+
+    }
+
+    .recommend-table-content {
+      max-height: 265px;
+      overflow-y: scroll;
+      overflow-x: hidden;
+
+      td {
+        padding: 8px 0;
+        border: 1px solid #e8e5e5;
+      }
+
+    }
+  }
+
+}
+
+
+// 自定义内容区
+// --------------------------------------------------
+.dec-module-config-user-defined{
+
+  .tabs-content .ke-container{
+    margin:30px auto;
+  }
+
+}
+
+
+// 轮播图
+// --------------------------------------------------
+.dec-module-config-carousel{
+
+  .custom {
+    .ke-upload-file{
+      display: none;
+    }
+
+    .carousel-table{
+      border-bottom:1px solid #dedede;
+    }
+
+    table{
+      width:90%;
+      margin:0 auto;
+      overflow: hidden;
+
+      thead{
+        font-size:14px;
+        color:#393838;
+        text-align:left;
+        height:30px;
+        line-height:30px;
+      }
+
+      tbody{
+        tr{
+          height:40px;
+          vertical-align: middle;
+          &:hover{
+            background: #fffece;
+          }
+          .up-img{
+            a.preview-img{
+              @extend %inline-block;
+              width:13px;
+              height:12px;
+              cursor: pointer;
+              vertical-align: middle;
+              background: url(/img/usercenter/shops/design-bg.png) no-repeat -40px -170px;
+            }
+            a{
+              vertical-align: middle;
+            }
+          }
+
+        }
+        input[type=text]{
+          width:166px;
+          padding-left:10px;
+          height:23px;
+          border:1px solid #d7d6d6;
+        }
+      }
+    }
+
+    div.addbtndiv{
+      height:40px;
+      text-align: right;
+      .appendarow{
+        width:68px;
+        height:24px;
+        line-height:24px;
+        text-align: center;
+        font-size:12px;
+        color:#333333;
+        border:1px solid #cccccc ;
+        border-radius:3px;
+        margin: 16px 64px 0 0;
+      }
+    }
+
+  }
+}
+
+// 店内搜索
+// --------------------------------------------------
+.dec-module-config-search{
+  font-family: Microsoft YaHei;
+  .custom {
+    table{
+      width:auto;
+      margin:0 auto;
+    }
+    tr{
+      height:29px;
+    }
+    .first{
+      width:100px;
+      text-align: right;
+      white-space:nowrap;
+      vertical-align: middle;
+    }
+    .wid{
+      width:136px;
+    }
+    .dec{
+      font-size:12px;
+    }
+    input[type="text"]{
+      border:1px solid #ccc;
+      line-height: 22px;
+      padding-left:4px;
+      width:125px;
+      height:22px;
+    }
+    input[type="checkbox"]{
+      margin:2px;
+    }
+  }
+
+}
+
+// 导航
+// --------------------------------------------------
+.dec-module-config-navigation{
+  .custom {
+
+    .nav-table {
+      border-bottom:1px solid #dedede;
+    }
+
+    table{
+      width:90%;
+      margin:0 auto;
+      overflow: hidden;
+
+      thead{
+        font-size:14px;
+        color:#393838;
+        text-align:left;
+        height:30px;
+        line-height:30px;
+      }
+
+      tbody{
+        tr{
+          height:40px;
+          vertical-align: middle;
+          &:hover{
+            background: #fffece;
+          }
+        }
+        input[type=text]{
+          width:166px;
+          padding-left:10px;
+          height:23px;
+          border:1px solid #d7d6d6;
+          &.disabled {
+            background: #eee;
+          }
+        }
+      }
+    }
+
+    div.navaddtrdiv{
+      height:40px;
+      text-align: right;
+      .appendtrbtn{
+        width:68px;
+        height:24px;
+        line-height:24px;
+        text-align: center;
+        font-size:12px;
+        color:#333333;
+        border:1px solid #cccccc ;
+        border-radius:3px;
+        margin: 16px 64px 0 0;
+      }
+    }
+
+  }
+}
+
+// ID录入
+// --------------------------------------------------
+#dec-id-entering {
+  padding: 10px 33px 0;
+
+  p {
+    padding: 14px 0
+  }
+
+  textarea {
+    border: 1px solid #ddd;
+    width: 429px;
+    height: 124px;
+    padding: 10px;
+    resize: none;
+  }
+
+  .ui-dialog-bottom {
+    padding-left: 0;
+  }
+}
+
+
+// 筛选录入
+// --------------------------------------------------
+#dec-filter-entering {
+  padding: 29px 33px 0;
+  color: #4f4f4e;
+
+  .condition {
+
+    label {
+      color: #716f6f;
+    }
+
+    select {
+      border: 1px solid #ccc;
+      width: 118px;
+      height: 22px;
+      margin-right: 10px;
+      font-size: 14px;
+    }
+
+    a.btn-filter {
+      @extend %inline-block;
+      background: url("/img/usercenter/shops/design-bg.png") no-repeat -399px -215px;
+      width: 41px;
+      height: 21px;
+      vertical-align: middle;
+    }
+
+  }
+
+  table {
+    text-align: center;
+  }
+
+  .table-title {
+    margin-top: 17px;
+    border: 1px solid #dddcdc;
+    border-bottom: none;
+
+    th {
+      background: #faeeda;
+      border: 1px solid #faeeda;
+      padding: 6px 0;
+    }
+  }
+
+  .table-content {
+    height: 197px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    background: #fbfaf8;
+    border:1px solid #dddcdc;
+    border-top:none;
+
+    .no-result {
+      color: #666;
+      text-align: center;
+      line-height: 196px;
+
+      i {
+        @extend %inline-block;
+        background: url("/img/usercenter/shops/design-bg.png") no-repeat -37px -211px;
+        width: 35px;
+        height: 30px;
+        vertical-align: middle;
+      }
+    }
+
+    td {
+      padding: 8px 0;
+      border-bottom: 1px solid #dddcdc;
+      background: #fbfaf8;
+    }
+
+    .last td {
+      border-bottom: none;
+    }
+
+  }
+
+
+  .ui-dialog-bottom {
+    padding-left: 0;
+  }
+}
