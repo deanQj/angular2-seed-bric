@@ -1,0 +1,115 @@
+//
+// 全局变量声明
+// --------------------------------------------------
+
+
+// for mixin of margin-position
+$margin-size: (left 0.5em O5em) (left 2em 2em);
+
+
+// Typography
+// -------------------------
+
+// Segoe UI - Windows UI 字体（从 Windows Vista 开始使用）；FreeSans - 包括 Ubuntu 之类的 Linux 分发版包含的字体。
+$font-family-base:  "Microsoft YaHei", "Segoe UI", "Lucida Grande", Helvetica, Arial, FreeSans, Arimo, "Droid Sans","wenquanyi micro hei","Hiragino Sans GB", "Hiragino Sans GB W3", Arial, sans-serif;
+
+$font-size-base:          12px !default;
+
+$font-size-h1:            floor($font-size-base * 2.6) !default; // ~36px
+$font-size-h2:            floor($font-size-base * 2.15) !default; // ~30px
+$font-size-h3:            ceil($font-size-base * 1.7) !default; // ~24px
+$font-size-h4:            ceil($font-size-base * 1.25) !default; // ~18px
+$font-size-h5:            $font-size-base !default;
+$font-size-h6:            ceil($font-size-base * 0.85) !default; // ~12px
+
+$line-height-base:        1.428571429 !default; // 20/14
+$line-height-computed:    floor($font-size-base * $line-height-base) !default; // ~20px
+
+$headings-font-family:    $font-family-base !default;
+$headings-font-weight:    500 !default;
+$headings-line-height:    1.1 !default;
+$headings-color:          inherit !default;
+
+
+// Grays
+// -------------------------
+
+$gray-darker:            lighten(#000, 13.5%) !default; // #222
+$gray-dark:              lighten(#000, 20%) !default;   // #333
+$gray:                   lighten(#000, 33.5%) !default; // #555
+$gray-light:             lighten(#000, 60%) !default;   // #999
+$gray-lighter:           lighten(#000, 93.5%) !default; // #eee
+
+
+// Link colors
+// -------------------------
+
+$link-primary: #337ab7; // 链接&按钮 首选项
+$link-success: #5cb85c; // 链接&按钮 成功
+$link-info: #5bc0de;    // 链接&按钮 一般信息
+$link-warning: #ffa600; // 链接&按钮 警告
+$link-danger: #d9534f;  // 链接&按钮 危险
+$link-dark: #333;       // 链接&按钮 黑色
+
+
+// Components 
+// -------------------------
+// Based on 14px font-size and 1.428 line-height (~20px to start)
+
+$padding-base-vertical:          6px !default;
+$padding-base-horizontal:        12px !default;
+
+$border-radius-base:             4px !default;
+
+
+// Buttons 按钮
+// -------------------------
+
+$btn-font-weight:                normal !default;
+
+$btn-default-color:              #333 !default;
+$btn-default-bg:                 #fff !default;
+$btn-default-border:             #ccc !default;
+
+$btn-primary-color:              #fff !default;
+$btn-primary-bg:                 $link-primary !default;
+$btn-primary-border:             darken($btn-primary-bg, 5%) !default;
+
+$btn-success-color:              #fff !default;
+$btn-success-bg:                 $link-success !default;
+$btn-success-border:             darken($btn-success-bg, 5%) !default;
+
+$btn-warning-color:              #fff !default;
+$btn-warning-bg:                 $link-warning !default;
+$btn-warning-border:             darken($btn-warning-bg, 5%) !default;
+
+$btn-danger-color:               #fff !default;
+$btn-danger-bg:                  $link-danger !default;
+$btn-danger-border:              darken($btn-danger-bg, 5%) !default;
+
+$btn-info-color:                 #fff !default;
+$btn-info-bg:                    $link-info !default;
+$btn-info-border:                darken($btn-info-bg, 5%) !default;
+
+$btn-link-disabled-color:        $gray-light !default;
+
+$btn-dark-color:                 #fff !default;
+$btn-dark-bg:                    $link-dark !default;
+$btn-dark-border:                darken($btn-dark-bg, 5%) !default;
+
+
+// 装修页 常量
+// -------------------------
+
+$dec-layout-all-width:            100%;
+$dec-layout-deff-width:           990px;
+$dec-layout-half-width:           490px;
+$dec-layout-2-small-width:        190px;
+$dec-layout-2-big-width:          790px;
+$dec-layout-lg-width:             1200px;
+
+
+// 装修页 模块-皮肤色
+// -------------------------
+$skin-colors: (blue #407fce -36px) (green #6aa531 -58px) (gray #676767 -14px) (red #9a0000 -102px) (orange #f19149 -124px);
+

@@ -1,0 +1,120 @@
+//
+// 日历
+// --------------------------------------------------
+
+
+/* base
+========================================================================== */
+.d-time {
+  height: 30px;
+  line-height: 32px;
+}
+
+/**  自定义日期 开始  **/
+.d-date-area {
+  display: inline-block;
+  *zoom:1;
+  *display:inline;
+  position: relative;
+  height: 27px;
+}
+.d-date-area input {
+  width: 100px;
+  height: 25px;
+  line-height: 25px;
+  padding: 0;
+  color: #626262;
+  outline: none;
+  border:1px solid #dedede;
+  text-indent: 1em;
+}
+.d-date-area input.has-time {
+  width: 149px;
+}
+.d-date-area span{
+  background: #ffa765;
+  border: 1px solid #dedede;
+  color: #fff;
+  position: absolute;
+  top: 0;
+  right: -29px;
+  width: 30px;
+  text-align: center;
+  height: 25px;
+  line-height: 25px;
+  height: 26px\9;
+  line-height: 26px\9;
+}
+
+.d-time {
+  height: 30px;
+  line-height: 32px;
+}
+.d-time-area {
+  display: inline-block;
+  *zoom:1;
+  *display:inline;
+  *vertical-align: middle;
+  position: relative;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 3px;
+  z-index: 1000;
+}
+.d-time-area input {
+  height: 30px;
+  line-height: 30px;
+  padding: 0;
+  outline: none;
+  text-indent: 0.5em;
+  position: relative;
+  z-index: 1000;
+}
+.d-time-area em {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: block;
+  width: 28px;
+  height: 30px;
+  line-height: 32px;
+  text-align: center;
+  cursor: pointer;
+}
+.d-time-area em i {
+  width: 20px;
+  height: 30px;
+  display: inline-block;
+}
+
+.ui-datepicker.ui-widget-content {
+  border: 1px solid #cdcdcd;
+  border-radius: 3px;
+}
+.ui-datepicker .ui-widget-content {
+  border: 1px solid #cdcdcd;
+}
+.ui-datepicker-header.ui-widget-header {
+  background: #16bbb7 none repeat scroll 0 0;
+  color: #fff;
+}
+.ui-datepicker .ui-widget-header .ui-icon {
+  background-image: url("/img/jquery_images/ui-icons_ffffff_256x240.png");
+}
+.ui-datepicker .ui-state-default {
+  background: #9ce0df none repeat scroll 0 0;
+  border: 1px solid #eee;
+}
+.ui-datepicker .ui-datepicker-buttonpane button {
+  color: #555;
+}
+.ui-datepicker .ui-state-hover, .ui-datepicker .ui-state-highlight {
+  background: #16bbb7 none repeat scroll 0 0;
+  border: 1px solid #16bbb7;
+  opacity: 1;
+}
+.ui-datepicker .ui-state-active {
+  color:#555;
+  background: #fff none repeat scroll 0 0;
+}
+/**  自定义日期 结束  **/
