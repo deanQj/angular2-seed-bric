@@ -1,15 +1,3 @@
-<p>Resources</p>
-
-<form (submit)="addName()">
-  <input [(ngModel)]="newName" name="newName" placeholder="Awesome Computer Scientist">
-  <button type="submit">Add</button>
-</form>
-
-<ul>
-  <li *ngFor="let name of names">{{name}}</li>
-</ul>
-
-
 <section id="Resources" class="container">
     <!-- <div class="head d_column" ng-hide="IsWeiXin">
         <img src="/app/assets/img/common/app-logo.png" alt="">
@@ -18,7 +6,7 @@
 
     <div class="productclass">
         <div class='f_l selprodu_l' (click)="produopen();">
-            <select id="productlist" [(ngModel)]="ResourceList.keyword" mobiscroll-select="settings" (change)="changeList()">
+            <select id="productlist" [(ngModel)]="Resources.keyword" mobiscroll-select="settings" (change)="changeList()">
               <option [ngValue]="value.id" *ngFor="let value of Categorys">{{value.name}}</option>
             </select>
             <em class="v_m">产品筛选</em><span class="icon open_ic"></span>
@@ -27,8 +15,8 @@
         <div class='f_r search_r'>
             <div class="inline-b search_div">
               <em class="v_m lookfor inline-b"></em>
-              <input [(ngModel)]="ResourceList.category" type="text" class="v_m" placeholder="输入关键字" ng-focus="ngfocus()" ng-blur="ngblurs($event)"/>
-              <i (click)="clearkey($event);" class='v_m clearkey inline-b' [hidden]="!ResourceList.category"></i>
+              <input [(ngModel)]="Resources.category" type="text" class="v_m" placeholder="输入关键字" ng-focus="ngfocus()" ng-blur="ngblurs($event)"/>
+              <i (click)="clearkey($event);" class='v_m clearkey inline-b' [hidden]="!Resources.category"></i>
               <button (click)="search();" class='v_m surebutton'>确定</button>
             </div>
         </div>
@@ -38,7 +26,7 @@
         <dl>
             <dd class='total_sort' (click)="Comprehensive();"><a href="javascript:void(0);" class="inline-b">综合排序</a></dd>
             <dd class="b_l">
-                <select id="mb_default" [(ngModel)]="ResourceList.adjusting" mobiscroll-select="settings" (change)="changeList()">
+                <select id="mb_default" [(ngModel)]="Resources.adjusting" mobiscroll-select="settings" (change)="changeList()">
                     <option selected="selected" [ngValue]="0">默认</option>
                     <option [ngValue]="1">上调</option>
                     <option [ngValue]="2">平调</option>
@@ -46,7 +34,7 @@
                 </select>
             </dd>
             <dd class="b_l">
-                <select id="mb_date" [(ngModel)]="ResourceList.created" mobiscroll-select="settings" (change)="changeList()">
+                <select id="mb_date" [(ngModel)]="Resources.created" mobiscroll-select="settings" (change)="changeList()">
                     <option selected="selected" [ngValue]="0">全部</option>
                     <option [ngValue]="1">今天</option>
                     <option [ngValue]="2">昨天</option>
@@ -54,7 +42,7 @@
                 </select>
             </dd>
             <dd class="b_l dd_last">
-                <select id="mb_city" [(ngModel)]="ResourceList.cityid" mobiscroll-select="settings" (change)="changeList()">
+                <select id="mb_city" [(ngModel)]="Resources.cityid" mobiscroll-select="settings" (change)="changeList()">
                     <option [ngValue]="value.id" *ngFor="(key, value) in Citys">{{value.name}}</option>
                 </select>
             </dd>
@@ -64,9 +52,9 @@
 
     <div class="loadimg" [hidden]="!isSearch"><img [src]="/app/assets/img/common/ajax-loader.gif" /></div>
     产品列表
-    <div class="product_list" ng-if="ResourceList.result.length > 0" [hidden]="isSearch">
+    <div class="product_list" ng-if="Resources.result.length > 0" [hidden]="isSearch">
         <ul>
-            <li *ngFor="(key, value) in ResourceList.result">
+            <li *ngFor="(key, value) in Resources.result">
                 <div class="pro_title">
                     <p class="f_l p_title" ng-if="!value.isMarquee">{{value.description}}</p>
                     <p ng-if="value.isMarquee" class="marquee"><span>{{value.description}}</span></p>
@@ -98,13 +86,13 @@
             </li>
         </ul>
 
-        <div class="d_h_c" ng-if="ResourceList.total > 1" (click)="moreGetResourceList()">
-            <a href="javascript:;" ng-hide="ResourceList.isLoader" class="loader-more" ng-bind="i18n.load_more"></a>
-            <div class="d-loader" [hidden]="!ResourceList.isLoader"><img [src]="/app/assets/img/common/ajax-loader.gif" /></div>
+        <div class="d_h_c" ng-if="Resources.total > 1" (click)="moreGetResources()">
+            <a href="javascript:;" ng-hide="Resources.isLoader" class="loader-more" ng-bind="i18n.load_more"></a>
+            <div class="d-loader" [hidden]="!Resources.isLoader"><img [src]="/app/assets/img/common/ajax-loader.gif" /></div>
         </div>
     </div>
 
-    <div class="product_none" ng-if="ResourceList.result.length == 0" [hidden]="isSearch">
+    <div class="product_none" ng-if="Resources.result.length == 0" [hidden]="isSearch">
         <img src="/app/assets/img/common/person.png" class="nonemesg">
     </div>
 

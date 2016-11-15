@@ -1,8 +1,24 @@
 import { Component, OnInit } from '@angular/core';
-import { NameListService } from '../shared/index';
+import { IF_result } from '../shared/index';
 import { ResourceService } from '../shared/api/resource.service';
 
-// import { Jsonp } from '@angular/http';
+/**
+ * interface - 资源单
+ */
+interface IF_resources {
+  isLoader : boolean;
+  isLast : boolean;
+  page : number;
+  limit : number;
+  total: number;
+  cityid : string;
+  adjusting : string;
+  created : string;
+  category : string;
+  keyword : string;
+  result : any[];
+}
+
 
 /**
  * This class represents the lazy loaded ResourcesComponent.
@@ -14,17 +30,16 @@ import { ResourceService } from '../shared/api/resource.service';
   styleUrls: ['resources.component.css'],
   // providers: [ Jsonp ],
 })
-
 export class ResourcesComponent implements OnInit {
 
-  newName: string = '';
+  /**
+   * 属性
+   */
   errorMessage: string;
-  names: any[] = [];
-  resources: any[] = [];
   Categorys:any[] = [{id: 0,name: "全部",sortname: ""}];
   Citys:any[] = [{id:0,name:'全部地区'}];
-
-  ResourceList = {
+  isSearch: boolean = true;
+  Resources:IF_resources = {
       isLoader : false,
       isLast : false,
       page : 1,
@@ -38,46 +53,34 @@ export class ResourcesComponent implements OnInit {
       result : []
   };
 
+
   /**
-   * Creates an instance of the ResourcesComponent with the injected
-   * NameListService.
-   *
-   * @param {NameListService} nameListService - The injected NameListService.
+   * 构造函数 - 创建服务的实例
+   * @param {ResourceService} public resourceService [description]
    */
   constructor(
-    public nameListService: NameListService,
     public resourceService: ResourceService
     ) {}
 
+
   /**
-   * Get the names OnInit
+   * 初始化
    */
   ngOnInit() {
-    this.getNames();
     this.getResourceData();
     this.getResourceList();
   }
 
-  /**
-   * Handle the nameListService observable
-   */
-  getNames() {
-    this.nameListService.get()
-      .subscribe(
-        names => this.names = names,
-        error =>  this.errorMessage = <any>error
-      );
-  }
 
   /**
-   * 获取显示的产品和地区
+   * 获取产品类型和地区
    */
   getResourceData() {
     this.resourceService.getResourceData()
       .subscribe(
         result => { 
             // console.log(result);
-          if (result.success == 0) {
+          if (result.success == "0") {
 
             for (var key of Object.keys(result.data.cities)) {
               this.Citys.push(result.data.cities[key]);
@@ -93,28 +96,58 @@ export class ResourcesComponent implements OnInit {
       );
   }
 
+
   /**
-   * Handle the nameListService observable
+   * 获取资源单列表
    */
   getResourceList() {
     this.resourceService.getResourceList()
       .subscribe(
-        resources => { 
-          // console.log(resources); 
-          this.resources = resources; 
+        result => { 
+          // console.log(result); 
+
+           if (result.success == "0") {
+              this.Resources.total = result.data.count / this.Resources.limit;
+              if(this.isSearch){
+                  for (let value of result.data.Respurces) {
+                      value.isMarquee = (this.realLength(value.description)*19) > (window.innerWidth-145);
+                  }
+
+                  this.Resources.result = result.data.Respurces;
+              }else{
+                  for (let value of result.data.Respurces) {
+                      value.isMarquee = (this.realLength(value.description)*19) > (window.innerWidth-145);
+                      this.Resources.result.push(value);
+                  }
+              }
+
+              this.Resources.isLoader = false;
+              this.Resources.isLast = (this.Resources.page >= result.data.page);
+
+              if (this.Resources.result.length > 0) {
+                  // $scope.renderScroll();
+              }
+          } else {
+             alert(result.message);
+          }
+
+          console.log(this.Resources)
         },
       );
   }
 
+
   /**
-   * Pushes a new name onto the names array
-   * @return {boolean} false to prevent default form submit behavior to refresh the page.
+   * 字符串真实长度
+   * @param  {any}    str [description]
+   * @return {number}     [description]
    */
-  addName(): boolean {
-    // TODO: implement nameListService.post
-    this.names.push(this.newName);
-    this.newName = '';
-    return false;
+  realLength(str:any): number {
+    var L=0.0;
+    for(var i in str){
+        L+=(str.charCodeAt(i)>255)?1.0:0.5;
+    }
+    return Math.ceil(L);
   }
 
 }

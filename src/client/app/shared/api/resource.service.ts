@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Response, Jsonp, URLSearchParams } from '@angular/http';
+import { IF_result } from './main.service';
 import { Observable } from 'rxjs/Observable';
 
 import 'rxjs/add/observable/throw';
@@ -22,7 +23,7 @@ export class ResourceService {
    * 接口-获取城市
    * @return {Observable<string[]>} [description]
    */
-  getResourceData(): Observable<string[]> {
+  getResourceData(): Observable<IF_result> {
     let url = 'http://www.16988.com/ajaxs/getResourceData';
     var params = new URLSearchParams();
     params.set('callback', 'JSONP_CALLBACK');
@@ -32,10 +33,10 @@ export class ResourceService {
   }
 
   /**
-   * 接口-获取所有省市
+   * 接口-获取所有资源列表
    * @return {Observable<string[]>} [description]
    */
-  getResourceList(): Observable<string[]> {
+  getResourceList(): Observable<IF_result> {
     let url = 'http://www.16988.com/ajaxs/getResourceList';
     var params = new URLSearchParams();
     params.set('callback', 'JSONP_CALLBACK');

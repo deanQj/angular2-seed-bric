@@ -6,123 +6,47 @@
 
 /* html标签重定义
 ========================================================================== */
-* {border: 0;padding: 0;margin:0;}
-body, html {background: #fff; font-size: $font-size-base; font-family: $font-family-base;height: 100%}
-h1,h2,h3,h4,h5,h6,p,ul,dl {margin: 0;padding: 0}
-ul li {list-style: none;}
-input,select,textarea,button {outline: none;}
-input::-ms-clear {display: none;}
-input::-ms-reveal{display: none;}
-input:-webkit-autofill { -webkit-box-shadow: 0 0 0 1000px white inset; }
-input[type="submit"],
-input[type="reset"],
-input[type="button"],
-button { -webkit-appearance: none; cursor: pointer; }
-i,em {font-style: normal;}
-a {
-  text-decoration: none;
-  &:hover {
-    text-decoration: underline;
-  }
-  &:focus {
-    outline: none;
-  }
-}
+// * {border: 0;padding: 0;margin:0;}
+// body, html {background: #fff; font-size: $font-size-base; font-family: $font-family-base;height: 100%}
+// h1,h2,h3,h4,h5,h6,p,ul,dl {margin: 0;padding: 0}
+// ul li {list-style: none;}
+// input,select,textarea,button {outline: none;}
+// input::-ms-clear {display: none;}
+// input::-ms-reveal{display: none;}
+// input:-webkit-autofill { -webkit-box-shadow: 0 0 0 1000px white inset; }
+// input[type="submit"],
+// input[type="reset"],
+// input[type="button"],
+// button { -webkit-appearance: none; cursor: pointer; }
+// i,em {font-style: normal;}
+// a {
+//   text-decoration: none;
+//   &:hover {
+//     text-decoration: underline;
+//   }
+//   &:focus {
+//     outline: none;
+//   }
+// }
 
 
 /* 自定义class
 ========================================================================== */
-.d-hide { display: none; }
-.d-show { display: block; }
-.d-clear { clear: both; }
-.d-float-left,.left { float: left; }
-.d-float-right,.right { float: right; }
-.d-inline-block { @extend %inline-block; }
-.d-limit-width,.text-overflow {white-space:nowrap; text-overflow:ellipsis; -o-text-overflow:ellipsis; overflow:hidden;}
-.d-text-center {text-align: center;}
-.d-text-left {text-align: left;}
-.d-text-right {text-align: right;}
-.d-font-16 {font-size: 14px;}
-.d-m-l-05em {margin-left: 0.5em;}
-.d-m-l-2em {margin-left: 2em;}
-.d-m-t-15 {margin-top: 15px;}
-.clear {clear:both}
-@each $value in $margin-size {
-  @include margin-position(nth($value,1), nth($value,2), nth($value,3));
-}
-
-
-/* 头部缩放 - 提示信息
-========================================================================== */
-#top_tips_container {
-    height: 50px;
-    width: 100%;
-    min-width: 1200px;
-    z-index: 2000;
-    overflow: hidden;
-    background: #fff2d1;
-    border-bottom: 1px solid #E9C58C;
-    .hintbar_txt {
-        width: 1200px;
-        margin: 0 auto;
-        font-size: 14px;
-        color: #984B12;
-        line-height: 50px;
-        text-align: center;
-    }
-    .text_close {
-        position: absolute;
-        right: 10px;
-        top: 10px;
-        width: 14px;
-        height: 14px;
-        font-size: 14px;
-        color: #E4AF4D;
-        line-height: 14px;
-        font-family: Tahoma;
-        font-weight: bold;
-        overflow: hidden;
-        text-align: center;
-        text-decoration: none;
-    }
-}
-
-
-/* 二栏布局（主右）
-========================================================================== */
-.layout-2-r {
-    zoom: 1;
-    overflow: hidden;
-    padding-left: 210px;
-    .aside {
-        float: left;
-        width: 200px;
-        margin-left: -100%;
-        position: relative;
-        left: -210px;
-        _left: 0;
-    }
-    .main {
-        float: left;
-        width: 100%;
-    }
-}
-
-/* 右侧栏固定宽度，左侧自适应
-========================================================================== */
-.bd-rgt {
-    zoom:1;
-    overflow:hidden;
-    padding-right:210px;
-    .main {
-        float:left;
-        width:100%;
-    }
-    .aside {
-        float:left;
-        width:200px;
-        margin-left:-200px; /* = -this.width */
-        position:relative;
-        right:-210px; /* = -parantNode.paddingRight */
-    }
-}
+// .d-hide { display: none; }
+// .d-show { display: block; }
+// .d-clear { clear: both; }
+// .d-float-left,.left { float: left; }
+// .d-float-right,.right { float: right; }
+// .d-inline-block { @extend %inline-block; }
+// .d-limit-width,.text-overflow {white-space:nowrap; text-overflow:ellipsis; -o-text-overflow:ellipsis; overflow:hidden;}
+// .d-text-center {text-align: center;}
+// .d-text-left {text-align: left;}
+// .d-text-right {text-align: right;}
+// .d-font-16 {font-size: 14px;}
+// .d-m-l-05em {margin-left: 0.5em;}
+// .d-m-l-2em {margin-left: 2em;}
+// .d-m-t-15 {margin-top: 15px;}
+// .clear {clear:both}
+// @each $value in $margin-size {
+//   @include margin-position(nth($value,1), nth($value,2), nth($value,3));
+// }
