@@ -21,5 +21,4 @@ import { IndexModule } from './index/index.module';
   bootstrap: [AppComponent]
 
 })
-
 export class AppModule { }
