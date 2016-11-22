@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en-US" target-language="zh-CHS" datatype="plaintext" original="ng2.template">
+    <body>
+      
+      <trans-unit id="77af3f6a69bd38eee91a43d0d2153d66d73e72e9" datatype="html">
+        <source>app set purchase network</source>
+        <target>掌上采购，最新行情，尽在手机集购网！</target>
+      </trans-unit>
+
+      <trans-unit id="33f210692dd0b228e6ccd7b67fed11c8c20dc689" datatype="html">
+        <source>immediately open</source>
+        <target>立即打开</target>
+      </trans-unit>
+
+      <trans-unit id="97e1c5e16f660766d6be718c47a07115c881d067" datatype="html">
+        <source>find goods</source>
+        <target>委托找货</target>
+      </trans-unit>
+
+      <trans-unit id="9398d1da4d93199b74a58853ccdd3c79255f8be7" datatype="html">
+        <source>quoted price</source>
+        <target>报价/行情</target>
+      </trans-unit>
+
+      <trans-unit id="26c341198bdd2da2c23ce843c36306364f391d3c" datatype="html">
+        <source>resource</source>
+        <target>资源单</target>
+      </trans-unit>
+
+      <trans-unit id="1c9debfb868c6ec5e43e9f338f72bb470d7fd6d9" datatype="html">
+        <source>entrust phone</source>
+        <target>委托电话：400 16988 01</target>
+      </trans-unit>
+
+      <trans-unit id="0a451a2be0a9b0161bd8c08d613aeaee888d3acf" datatype="html">
+        <source>click to dial up</source>
+        <target>点击拨号</target>
+      </trans-unit>
+
+      <trans-unit id="6ca313677b66228f9732f2b66ef560e2c47d9f63" datatype="html">
+        <source>touch screen version</source>
+        <target>触屏版</target>
+      </trans-unit>
+
+      <trans-unit id="8661065f042c7b4a25f5c65ff302b8f2ab86c788" datatype="html">
+        <source>client app</source>
+        <target>客户端</target>
+      </trans-unit>
+
+      <trans-unit id="f8fc210221bb90527bc60c94c25a9f8c87cd3494" datatype="html">
+        <source>computer version</source>
+        <target>电脑版</target>
+      </trans-unit>
+
+      <trans-unit id="b265181e1f2b6abff2ddf12e34a0274f590321de" datatype="html">
+        <source>copyright</source>
+        <target>Copyright© 2014-2016农产品集购网</target>
+      </trans-unit>
+
+    </body>
+  </file>
+</xliff>

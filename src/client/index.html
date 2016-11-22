@@ -1,18 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
   <base href="<%= APP_BASE %>">
   <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <title><%= APP_TITLE %></title>
   <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Dean">
+  <meta name="revised" content="v0.1.0, 2016/11/16/" />
+  <meta name="format-detection" content="telephone=no"  />
+  <meta name="format-detection" content="email=no"  />
+  <meta http-equiv="Cache-Control" content="no-siteapp" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
   <!-- inject:css -->
   <!-- endinject -->
 </head>
 <body>
 
-  <sd-app>Loading...</sd-app>
+  <sd-app>
+    <div class="weui-loadmore" style="margin-top:10em;">
+      <i class="weui-loading"></i>
+      <span class="weui-loadmore__tips">正在加载</span>
+    </div>
+  </sd-app>
 
   <script>
   // Fixes undefined module function in SystemJS bundle

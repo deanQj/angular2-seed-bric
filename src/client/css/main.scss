@@ -1,63 +1,48 @@
-/* Reset */
-html,
-body,
-div {
-  border: 0;
-  margin: 0;
-  padding: 0;
-}
+/* 浏览器统一
+========================================================================== */
 
-/* Box-sizing border-box */
-* {
-  box-sizing: border-box;
-}
+@import "../scss/base/normalize";
 
-/* Set up a default font and some padding to provide breathing room */
-body {
-  font-family: Roboto, "Helvetica Neue", sans-serif;
-  font-size: 16px;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
 
-p {
-  font-weight: 400;
-  letter-spacing: 0.01em;
-  line-height: 20px;
-  margin-bottom: 1em;
-  margin-top: 1em;
-}
+/* VENDORS - 第三方&重定义
+========================================================================== */
 
-ul {
-  margin: 10px 0 0;
-  padding: 0 0 0 20px;
-}
+@import "../scss/vendors/weui.min";
+@import "../scss/vendors/swiper.min";
+@import "../scss/vendors-extensions/swiper.custom";
+@import "../scss/vendors-extensions/mobiscroll.custom";
 
-li {
-  font-weight: 400;
-  margin-top: 4px;
-}
 
-input {
-  border: 1px solid #106cc8;
-  font-size: 14px;
-  height: 40px;
-  outline: none;
-  padding: 8px;
-}
+/* HELPERS - 工具
+========================================================================== */
 
-button {
-  background-color: #106cc8;
-  border-style: none;
-  color: rgba(255, 255, 255, 0.87);
-  cursor: pointer;
-  display: inline-block;
-  font-size: 14px;
-  height: 40px;
-  padding: 8px 18px;
-  text-decoration: none;
-}
+@import "../scss/helpers/variables";
+@import "../scss/helpers/functions";
+@import "../scss/helpers/placeholders";
+@import "../scss/helpers/mixins";
 
-button:hover {
-  background-color: #28739e;
-}
+
+/* BASE - 共通
+========================================================================== */
+
+@import "../scss/base/main";
+
+
+/* LAYOUT - 布局
+========================================================================== */
+
+@import "../scss/layout/_front";
+
+
+/* COMPONENTS - 零件
+========================================================================== */
+
+// @import "../scss/components/buttons";
+// @import "../scss/components/areas";
+// @import "../scss/components/select";
+// @import "../scss/components/form";
+// @import "../scss/components/cue";
+
+
+/* themes - 皮肤
+========================================================================== */

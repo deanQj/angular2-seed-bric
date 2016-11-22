@@ -1,108 +1,120 @@
 <section id="Resources" class="container">
-    <!-- <div class="head d_column" ng-hide="IsWeiXin">
-        <img src="/app/assets/img/common/app-logo.png" alt="">
-        <h3 class="d_column_sub" ng-bind="i18n.resource"></h3>
-    </div> -->
 
-    <div class="productclass">
-        <div class='f_l selprodu_l' (click)="produopen();">
-            <select id="productlist" [(ngModel)]="Resources.keyword" mobiscroll-select="settings" (change)="changeList()">
+    <div class="head" [hidden]="IsWeiXin">
+        <div class="weui-flex">
+            <img src="/assets/img/common/app-logo.png" alt="">
+            <h3 class="weui-flex__item">资源单</h3>
+        </div>
+    </div>
+
+    <div class="condition-search weui-flex">
+        <div class='products'>
+            <select id="sel-product" [mobiscroll]="Resources.keyword" (onSet)="Resources.keyword=$event;changeList()" [(ngModel)]="Resources.keyword" [hidden]="true" >
               <option [ngValue]="value.id" *ngFor="let value of Categorys">{{value.name}}</option>
             </select>
-            <em class="v_m">产品筛选</em><span class="icon open_ic"></span>
+            <em class="vertical-middle">产品筛选</em><span class="icon-arrow-right"></span>
         </div>
 
-        <div class='f_r search_r'>
-            <div class="inline-b search_div">
-              <em class="v_m lookfor inline-b"></em>
-              <input [(ngModel)]="Resources.category" type="text" class="v_m" placeholder="输入关键字" ng-focus="ngfocus()" ng-blur="ngblurs($event)"/>
-              <i (click)="clearkey($event);" class='v_m clearkey inline-b' [hidden]="!Resources.category"></i>
-              <button (click)="search();" class='v_m surebutton'>确定</button>
+        <div class='weui-flex__item'>
+            <div class="search-box">
+              <em></em>
+              <input type="text" placeholder="输入关键字" 
+                     [(ngModel)]="Resources.category"  
+                     (focus)="seachTextFocus($event)"
+                     (blur)="seachTextBlur($event)" />
+              <i (click)="seachTextClear($event);"  [hidden]="!Resources.category"></i>
+              <button>确定</button>
             </div>
         </div>
     </div>
-<!-- 
-    <div class="condition_div" >
-        <dl>
-            <dd class='total_sort' (click)="Comprehensive();"><a href="javascript:void(0);" class="inline-b">综合排序</a></dd>
-            <dd class="b_l">
-                <select id="mb_default" [(ngModel)]="Resources.adjusting" mobiscroll-select="settings" (change)="changeList()">
+
+    <div class="condition-sort">
+        <dl class="weui-flex">
+            <dd class='weui-flex__item total_sort' (click)="changeList(true);">
+                <a href="javascript:void(0);" class="inline-block">综合排序</a>
+            </dd>
+            <dd class="weui-flex__item">
+                <select id="sel-default" [mobiscroll]="Resources.adjusting" (onSet)="Resources.adjusting=$event;changeList()" [(ngModel)]="Resources.adjusting" [hidden]="true" >
                     <option selected="selected" [ngValue]="0">默认</option>
                     <option [ngValue]="1">上调</option>
                     <option [ngValue]="2">平调</option>
                     <option [ngValue]="3">下调</option>
                 </select>
             </dd>
-            <dd class="b_l">
-                <select id="mb_date" [(ngModel)]="Resources.created" mobiscroll-select="settings" (change)="changeList()">
+            <dd class="weui-flex__item">
+                <select id="sel-date" [mobiscroll]="Resources.created" (onSet)="Resources.created=$event;changeList()" [(ngModel)]="Resources.created" [hidden]="true">
                     <option selected="selected" [ngValue]="0">全部</option>
                     <option [ngValue]="1">今天</option>
                     <option [ngValue]="2">昨天</option>
                     <option [ngValue]="3">近三天</option>
                 </select>
             </dd>
-            <dd class="b_l dd_last">
-                <select id="mb_city" [(ngModel)]="Resources.cityid" mobiscroll-select="settings" (change)="changeList()">
-                    <option [ngValue]="value.id" *ngFor="(key, value) in Citys">{{value.name}}</option>
+            <dd class="weui-flex__item">
+                <select id="sel-city" [mobiscroll]="Resources.cityid" (onSet)="Resources.cityid=$event;changeList()" [(ngModel)]="Resources.cityid" [hidden]="true">
+                    <option [ngValue]="value.id" *ngFor="let value of Citys">{{value.name}}</option>
                 </select>
             </dd>
         </dl>
     </div>
-    
 
-    <div class="loadimg" [hidden]="!isSearch"><img [src]="/app/assets/img/common/ajax-loader.gif" /></div>
-    产品列表
-    <div class="product_list" ng-if="Resources.result.length > 0" [hidden]="isSearch">
+    <div class="product-list" *ngIf="Resources.result.length > 0" >
+
         <ul>
-            <li *ngFor="(key, value) in Resources.result">
-                <div class="pro_title">
-                    <p class="f_l p_title" ng-if="!value.isMarquee">{{value.description}}</p>
-                    <p ng-if="value.isMarquee" class="marquee"><span>{{value.description}}</span></p>
-                    <p class="f_r look_down"><span class="v_m">预览：</span><b class="v_m">{{value.view}}</b></p>
+            <li *ngFor="let value of Resources.result">
+                <div class="title weui-flex">
+                    <p class="text weui-flex__item" *ngIf="!value.isMarquee">{{value.description}}</p>
+                    <p class="marquee weui-flex__item" *ngIf="value.isMarquee"><span>{{value.description}}</span></p>
+                    <p class="preview-num"><span class="vertical-middle">预览：</span><b class="vertical-middle">{{value.view}}</b></p>
                 </div>
                 <div class='pro_detail_content'>
-                    <div class='f_l pro_detail'>
+                    <div class='float-left pro_detail'>
                         <div class="pro_detail_div">
-                            <div class="f_l">主营产品：</div>
+                            <div class="float-left">主营产品：</div>
                             <div class="main_product">
-                                <p *ngFor="(key, values) in value.info">{{values.LevelName}}</p>
+                                <p *ngFor="let values of value.info">{{values.LevelName}}</p>
                             </div>
                         </div>
                         <div class="pro_detail_div">
-                            <div class="f_l">今日调价：</div>
+                            <div class="float-left">今日调价：</div>
                             <div class="main_product">
-                                <p class="p-color-{{values.adjusting_id}}" *ngFor="(key, values) in value.info">{{values.adjusting_price}}
-                                    <i class="i_icon v_m i_icon{{values.adjusting_id}}"></i>
+                                <p class="p-color-{{values.adjusting_id}}" *ngFor="let values of value.info">{{values.adjusting_price}}
+                                    <i class="i_icon vertical-middle i_icon{{values.adjusting_id}}"></i>
                                 </p>
                             </div>
                         </div>
-                        <div class="pro_detail_div"><div class="f_l">上传时间：</div><span class="timespan">{{value.created}}</span></div>
-                        <div class="company_name pro_detail_div"><div class="f_l cpname_d">公司名称：</div><span class="cpname_span">{{value.company_name}}</span></div>
+                        <div class="pro_detail_div"><div class="float-left">上传时间：</div><span class="timespan">{{value.created}}</span></div>
+                        <div class="company_name pro_detail_div"><div class="float-left cpname_d">公司名称：</div><span class="cpname_span">{{value.company_name}}</span></div>
                     </div>
-                    <div class="f_r pro_button">
-                        <a href="#/resourcesView/{{value.id}}" class="preview">预览</a>
+                    <div class="float-right pro_button">
+                        <a class="preview" [routerLink]="['/resourcesView',value.id]" >预览</a>
                     </div>
                 </div>
             </li>
         </ul>
 
-        <div class="d_h_c" ng-if="Resources.total > 1" (click)="moreGetResources()">
-            <a href="javascript:;" ng-hide="Resources.isLoader" class="loader-more" ng-bind="i18n.load_more"></a>
-            <div class="d-loader" [hidden]="!Resources.isLoader"><img [src]="/app/assets/img/common/ajax-loader.gif" /></div>
+        <div class="weui-loadmore" *ngIf="Resources.total > 1" (click)="getMoreList()" [hidden]="Resources.isLoader||Resources.isLast">
+            <span class="weui-loadmore__tips" >加载更多</span>
         </div>
     </div>
 
-    <div class="product_none" ng-if="Resources.result.length == 0" [hidden]="isSearch">
-        <img src="/app/assets/img/common/person.png" class="nonemesg">
+    <div class="product_none" *ngIf="Resources.total == 0" [hidden]="Resources.isLoader">
+        <img src="/assets/img/common/person.png" class="nonemesg">
     </div>
 
+    <div class="weui-loadmore" [hidden]="!Resources.isLoader">
+        <i class="weui-loading"></i>
+        <span class="weui-loadmore__tips">正在加载</span>
+    </div>
+
+
+<!-- 
     <div class="foot" ng-init="footState=true;" [hidden]="!footState">
         <a href="javascript:;" class="btn-close" (click)="footState=false;">
-            <img src="/app/assets/img/common/foot-close.png" alt="">
+            <img src="/assets/img/common/foot-close.png" alt="">
         </a>
-        <div  class="d_column">
-            <a href="tel:4001698801" class="d_column_sub">
-                <img src="/app/assets/img/common/foot-man.png" alt="">
+        <div  class="weui-flex">
+            <a href="tel:4001698801" class="weui-flex__item">
+                <img src="/assets/img/common/foot-man.png" alt="">
                 <span ng-bind="i18n.entrust_phone"></span>
             </a>
             <a href="tel:4001698801" class="btn" ng-bind="i18n.click_to_dial_up"></a>

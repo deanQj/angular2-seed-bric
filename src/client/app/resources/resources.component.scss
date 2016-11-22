@@ -1,170 +1,285 @@
-body {
-  background-color: #f8f9fe;
-}
+//
+// 资源单
+// --------------------------------------------------
 
-input {
-  border-radius: 0;
-  box-shadow: none;
-}
-
-.inline-b {
-  display: inline-block;
-}
-
-.v_m {
-  vertical-align: middle;
-}
-
-.f_l {
-  float: left;
-}
-
-.f_r {
-  float: right;
-}
 
 #Resources {
+  // background-color: #f8f9fe;
+  background: #f7f9fe;
   width: 100%;
-  padding: 0px;
-  margin: 0px;
-  .title {
-    font-size: 20px;
-    width: 100%;
-    height: 50px;
-    line-height: 50px;
-    text-align: center;
-    color: #ffffff;
-    background: #5b5966;
+
+  .weui-loadmore {
+    margin: 0 auto;
+    padding: 1.5em 0;
   }
-  .productclass {
-    height: 50px;
-    line-height: 52px;
-    color: #ff9400;
+}
+
+
+/* 产品筛选&搜索框
+========================================================================== */
+.condition-search {
+  height: 50px;
+  line-height: 50px;
+  color: #ff9400;
+  font-size: 18px;
+  background: #f8f3f0;
+  overflow: hidden;
+
+  .products {
+    width:102px;
+    padding-left: 10px;
+    cursor: pointer;
+    position: relative;
+    em {
+      font-style: normal;
+    }
+    .icon-arrow-right {
+      width: 17px;
+      height: 17px;
+      display: inline-block;
+      vertical-align: middle;
+      margin-left: 4px;
+      background: url("/assets/img/common/resource-bg.png") no-repeat -55px -9px;
+    }
+    #sel-product_dummy {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 10;
+      opacity: 0;
+    }
+  }
+
+  .search-box {
+    float: right;
+    padding-left: 5px;
     font-size: 18px;
-    background: #f8f3f0;
+    line-height: 30px;
+    border-radius: 46px;
+    background: #fff;
+    color: #4eb5fe;
+    vertical-align: middle;
+    width: 100px;
+    height: 30px;
     overflow: hidden;
-    .selprodu_l {
-      padding-left: 14px;
-      cursor: pointer;
-      position: relative;
-      #productlist_dummy {
-        position: absolute;
-        left: 0;
-        top: 0;
+    position: relative;
+    margin: 10px 10px 0 0;
+    em, input, i {
+      vertical-align: middle;
+      display: inline-block;
+    }
+    em {
+      width: 23px;
+      height: 25px;
+      background: url("/assets/img/common/resource-bg.png") no-repeat -19px -9px;
+    }
+    input {
+      position: absolute;
+      left: 30px;
+      top: 3px;
+      width: 118px;
+      height: 24px;
+      line-height: 24px;
+      border: none;
+      font-size: 12px;
+      background: #fff;
+      color: #333;
+      outline: none;
+      font-size: 1.2rem;
+    }
+    i {
+      width: 24px;
+      height: 24px;
+      background: url("/assets/img/common/resource-bg.png") no-repeat -52px -81px;
+      position: absolute;
+      left: 124px;
+      top: 3px;
+      z-index: 20;
+    }
+    button {
+      padding: 0;
+      width: 38px;
+      height: 24px;
+      font-size: 14px;
+      color: #000;
+      background: #fff;
+      border: none;
+      margin-left: 118px;
+    }
+  }
+}
+
+
+/* 综合排序&条序&日期&城市
+========================================================================== */
+.condition-sort {
+  background: #fff;
+  dl {
+    height: 40px;
+    border-top: 1px solid #f0efee;
+    border-bottom: 1px solid #f0efee;
+    overflow: hidden;
+    dd {
+      text-align: center;
+      height: 40px;
+      line-height: 40px;
+      vertical-align: middle;
+      border-left: 1px solid #d6d6d9;
+      &:first-child {
+        border-left:none;
+      }
+      a {
         width: 100%;
         height: 100%;
-        z-index: 10;
-        opacity: 0;
+        font-size: 16px;
+        color: #ff9400;
       }
-      .icon {
-        width: 17px;
-        height: 17px;
-        display: inline-block;
-        vertical-align: middle;
-      }
-      .open_ic {
-        background: url("/app/assets/img/common/resource-bg.png") no-repeat -55px -10px;
-      }
-    }
-    .search_r .search_div {
-      padding: 0 5px;
-      font-size: 18px;
-      line-height: 30px;
-      border-radius: 46px;
-      background: #fff;
-      color: #4eb5fe;
-      vertical-align: middle;
-      width: 96px;
-      height: 30px;
-      overflow: hidden;
-      position: relative;
-      margin-right: 10px;
-      em.lookfor {
-        width: 27px;
-        height: 27px;
-        background: url("/app/assets/img/common/resource-bg.png") no-repeat -19px -9px;
-        margin-right: 5px;
-      }
-      input {
-        position: absolute;
-        left: 29px;
-        top: 1px;
-        width: 116px;
-        height: 24px;
-        line-height: 24px;
-        border: none;
-        font-size: 12px;
-        background: #fff;
-        color: #333;
-        outline: none;
-        font-size: 1.2rem;
-      }
-      button {
+      #sel-default_dummy, #sel-date_dummy, #sel-city_dummy {
         padding: 0;
-        width: 38px;
-        height: 24px;
-        line-height: 24px;
-        font-size: 14px;
-        color: #000;
-        background: #fff;
-        border: none;
-        margin-left: 118px;
-      }
-      .clearkey {
-        width: 24px;
-        height: 24px;
-        background: url("/app/assets/img/common/resource-bg.png") no-repeat -52px -81px;
-        position: absolute;
-        left: 120px;
-        top: 2px;
-        z-index: 20;
-      }
-    }
-  }
-  .condition_div {
-    background: #fff;
-    dl {
-      height: 40px;
-      border-top: 1px solid #f0efee;
-      border-bottom: 1px solid #f0efee;
-      overflow: hidden;
-      dd {
+        margin: 0;
+        text-indent: 0px;
+        width: 100%;
         text-align: center;
-        float: left;
-        width: 24%;
-        height: 40px;
-        line-height: 40px;
-        vertical-align: middle;
-        &.b_l {
-          border-left: 1px solid #d6d6d9;
-        }
-        &.dd_last.b_l {
-          width: 27%;
-        }
+        border: none;
+        height: 100%;
       }
     }
   }
 }
 
-/*#Resources .productclass .selprodu_l .close_ic{ background: url("/app/assets/img/common/resource-bg.png") no-repeat -96px -12px;    }*/
 
-#mb_default_dummy, #mb_date_dummy, #mb_city_dummy {
-  padding: 0;
-  margin: 0;
-  text-indent: 0px;
+/* 产品列表
+========================================================================== */
+.product-list {
   width: 100%;
-  text-align: center;
-  border: none;
-  height: 100%;
+
+  ul {padding-bottom: 10px;}
+
+  ul li {
+    padding: 10px;
+    overflow: hidden;
+    margin-top: 10px;
+    border-bottom: 1px solid #dfddda;
+    background: #fff;
+    .title {
+      margin: 0 auto;
+      height: 40px;
+      line-height: 40px;
+      border-bottom: 1px solid #dddede;
+      background: #fff;
+      .text {
+        padding-left: 6px;
+        font-size: 18px;
+        color: #ff9400;
+        font-weight: bold;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        -o-text-overflow: ellipsis;
+        overflow: hidden;
+      }
+      .marquee {
+        overflow: hidden;
+        position: relative;
+        font-size: 18px;
+        color: #ff9400;
+        font-weight: bold;
+        margin-right: 1em;
+        span {
+          position: absolute;
+          left: 0px;
+          top: 0;
+          display: inline-block;
+          height: 40px;
+          overflow: hidden;
+          white-space: nowrap;
+        }
+      }
+      .preview-num {
+        margin-right: 10px;
+        b {
+          color: #fe9b13;
+        }
+      }
+    }
+    .pro_detail_content {
+      margin-top: 10px;
+      color: #242424;
+      font-size: 14px;
+      .pro_detail div.pro_detail_div {
+        width: 178px;
+        padding-left: 8px;
+        height: 30px;
+        line-height: 30px;
+        overflow: hidden;
+        &.company_name {
+          width: 174px;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          -o-text-overflow: ellipsis;
+          overflow: hidden;
+          /* height: 54px;*/
+          span.cpname_span {
+            vertical-align: top;
+          }
+        }
+        .main_product {
+          float: left;
+          width: 100px;
+          height: 30px;
+          line-height: 30px;
+          overflow: hidden;
+        }
+        .p-color-1 {
+          color: #ff9400;
+        }
+        .p-color-3 {
+          color: #91c226;
+        }
+        .i_icon {
+          display: inline-block;
+          vertical-align: middle;
+          width: 15px;
+          height: 20px;
+          margin-left: 10px;
+          &.i_icon1 {
+            background: url("/assets/img/common/resource-bg.png") no-repeat -272px -10px;
+          }
+          &.i_icon2 {
+            background: url("/assets/img/common/resource-bg.png") no-repeat -230px -13px;
+          }
+          &.i_icon3 {
+            background: url("/assets/img/common/resource-bg.png") no-repeat -312px -13px;
+          }
+        }
+      }
+      .pro_button {
+        a {
+          text-align: center;
+          width: 60px;
+          height: 60px;
+          line-height: 60px;
+          border-radius: 60px;
+          display: block;
+          margin-right: 12px;
+          color: #fff;
+          font-size: 18px;
+          border: 7px solid #61cffd;
+        }
+        .preview {
+          background: #88d8fe;
+          margin-top: 21px;
+        }
+      }
+    }
+  }
+
 }
+
 
 #Resources {
-  .condition_div dl dd.total_sort a {
-    width: 100%;
-    height: 100%;
-    font-size: 16px;
-    color: #ff9400;
-  }
+
   .loadimg {
     width: 100%;
     margin-top: 10px;
@@ -174,148 +289,16 @@ input {
       margin-top: 100px;
     }
   }
-  .product_list {
-    width: 100%;
-    background: #f7f9fe;
-    margin-top: 10px;
-    ul li {
-      padding: 10px;
-      overflow: hidden;
-      margin-top: 10px;
-      border-bottom: 1px solid #dfddda;
-      background: #fff;
-      .pro_title {
-        margin: 0 auto;
-        height: 40px;
-        line-height: 40px;
-        border-bottom: 1px solid #dddede;
-        background: #fff;
-        .p_title {
-          padding-left: 6px;
-          font-size: 18px;
-          color: #ff9400;
-          font-weight: bold;
-          white-space: nowrap;
-          text-overflow: ellipsis;
-          -o-text-overflow: ellipsis;
-          overflow: hidden;
-        }
-        .look_down {
-          margin-right: 14px;
-          b {
-            color: #fe9b13;
-          }
-        }
-      }
-      .pro_detail_content {
-        margin-top: 10px;
-        color: #242424;
-        font-size: 14px;
-        .pro_detail div.pro_detail_div {
-          width: 178px;
-          padding-left: 8px;
-          height: 30px;
-          line-height: 30px;
-          overflow: hidden;
-          &.company_name {
-            width: 174px;
-            white-space: nowrap;
-            text-overflow: ellipsis;
-            -o-text-overflow: ellipsis;
-            overflow: hidden;
-            /* height: 54px;*/
-            span.cpname_span {
-              vertical-align: top;
-            }
-          }
-          .main_product {
-            float: left;
-            width: 100px;
-            height: 30px;
-            line-height: 30px;
-            overflow: hidden;
-          }
-          .p-color-1 {
-            color: #ff9400;
-          }
-          .p-color-3 {
-            color: #91c226;
-          }
-          .i_icon {
-            display: inline-block;
-            vertical-align: middle;
-            width: 15px;
-            height: 20px;
-            margin-left: 10px;
-            &.i_icon1 {
-              background: url("/app/assets/img/common/resource-bg.png") no-repeat -272px -10px;
-            }
-            &.i_icon2 {
-              background: url("/app/assets/img/common/resource-bg.png") no-repeat -230px -13px;
-            }
-            &.i_icon3 {
-              background: url("/app/assets/img/common/resource-bg.png") no-repeat -312px -13px;
-            }
-          }
-        }
-        .pro_button {
-          a {
-            text-align: center;
-            width: 60px;
-            height: 60px;
-            line-height: 60px;
-            border-radius: 60px;
-            display: block;
-            margin-right: 12px;
-            color: #fff;
-            font-size: 18px;
-            border: 7px solid #61cffd;
-          }
-          .preview {
-            background: #88d8fe;
-            margin-top: 21px;
-          }
-        }
-      }
-    }
-    .d_h_c {
-      padding: 4px 0;
-      height: 40px;
-      line-height: 40px;
-      margin-bottom: 4.4rem;
-      &:hover {
-        cursor: pointer;
-      }
-    }
-  }
+
   .product_none {
     text-align: center;
   }
-  .product_list ul li .pro_title .marquee {
-    float: left;
-    width: 175px;
-    height: 40px;
-    overflow: hidden;
-    position: relative;
-    font-size: 18px;
-    color: #ff9400;
-    font-weight: bold;
-    span {
-      position: absolute;
-      left: 0px;
-      top: 0;
-      display: inline-block;
-      height: 40px;
-      overflow: hidden;
-      white-space: nowrap;
-    }
-  }
+  
 }
 
-/*#Resources .product_list ul li .pro_detail_content .pro_detail div.pro_detail_div.company_name .cpname_d{height: 50px;}*/
 
 @media screen and (min-width: 375px) {
-  #Resources .product_list ul li {
+  #Resources .product-list ul li {
     .pro_title .marquee {
       width: 230px;
     }
@@ -355,7 +338,7 @@ input {
 }
 
 @media screen and (min-width: 414px) {
-  #Resources .product_list ul li {
+  #Resources .product-list ul li {
     .pro_title .marquee {
       width: 269px;
     }
@@ -378,7 +361,7 @@ footer {
     width: 60px;
     i {
       display: block;
-      background: url("/app/assets/img/common/arrow-bg.png") no-repeat -133px -6px;
+      background: url("/assets/img/common/arrow-bg.png") no-repeat -133px -6px;
       width: 42px;
       height: 42px;
       margin: 4px auto 0;

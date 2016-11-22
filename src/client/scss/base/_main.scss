@@ -6,6 +6,18 @@
 
 /* html标签重定义
 ========================================================================== */
+html { height: 100%; color: #646464; font-size:10px;}
+@media screen and (min-width:321px) and (max-width:375px){html{font-size:11px}}
+@media screen and (min-width:376px) and (max-width:414px){html{font-size:12px}}
+@media screen and (min-width:415px) and (max-width:639px){html{font-size:15px}}
+@media screen and (min-width:640px) and (max-width:719px){html{font-size:20px}}
+@media screen and (min-width:720px) and (max-width:749px){html{font-size:22.5px}}
+@media screen and (min-width:750px) and (max-width:799px){html{font-size:23.5px}}
+@media screen and (min-width:800px){html{font-size:25px}}
+img {width:100%;}
+a,button,input,textarea{-webkit-tap-highlight-color: rgba(0,0,0,0);outline: none;}
+input, textarea {border: 0;-webkit-appearance: none;box-shadow: none;}
+body {min-height: 100%;}
 // * {border: 0;padding: 0;margin:0;}
 // body, html {background: #fff; font-size: $font-size-base; font-family: $font-family-base;height: 100%}
 // h1,h2,h3,h4,h5,h6,p,ul,dl {margin: 0;padding: 0}
@@ -32,6 +44,14 @@
 
 /* 自定义class
 ========================================================================== */
+.inline-block {display: inline-block;}
+.float-left {float: left;}
+.float-right {float: right;}
+.vertical-middle {vertical-align: middle;}
+.width-limit {white-space:nowrap; text-overflow:ellipsis; -o-text-overflow:ellipsis; overflow:hidden;}
+.text-center {text-align: center;}
+.text-right {text-align: right;}
+.clear {clear:both}
 // .d-hide { display: none; }
 // .d-show { display: block; }
 // .d-clear { clear: both; }
