@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { IF_result } from '../shared/index';
 import { ResourceService } from '../shared/api/resource.service';
-import { MobiscrollDirective } from '../shared/directives/mobiscroll.directive';
 
 /**
  * 环境声明
@@ -54,8 +53,8 @@ export class ResourcesComponent implements OnInit {
       limit : 6,
       total: 0,
       cityid : "",
-      adjusting : "",
-      created : "",
+      adjusting : "0",
+      created : "0",
       category : "",
       keyword : "",
       result : []
@@ -70,6 +69,10 @@ export class ResourcesComponent implements OnInit {
     public resourceService: ResourceService
     ) {}
 
+  modelChange() {
+    console.log(123)
+  }
+
 
   /**
    * 初始化
@@ -81,10 +84,6 @@ export class ResourcesComponent implements OnInit {
 
     this.getResourceData();
     this.getResourceList();
-  }
-
-  adjustingChange() {
-    console.log(12323)
   }
 
 
@@ -218,8 +217,10 @@ export class ResourcesComponent implements OnInit {
    */
   changeList(type:boolean = false) {
     if (type) {
-      this.Resources.created = "";
-      this.Resources.adjusting = "";
+      this.Resources.created = "0";
+      this.Resources.adjusting = "0";
+      $('#sel-default').mobiscroll('clear');
+      $('#sel-date').mobiscroll('clear');
     }
     this.getResourceList();
   }

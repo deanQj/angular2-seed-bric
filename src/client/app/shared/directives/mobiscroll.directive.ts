@@ -9,16 +9,15 @@ declare var $:any;
 @Directive({  
     selector: '[mobiscroll]',
     // outputs : ['onSet']
-    host: {  
-        '(ngModelChange)' : 'onInputChange($event)'
-    }
+    // host: {  
+    //     '(ngModelChange)' : 'onInputChange($event)'
+    // }
 })
 export class MobiscrollDirective implements OnInit {  
   
-  @Input('mobiscroll') inputModel:any;  
+  @Input('mobiscroll') inputModel:any;
 
-  @Output()
-  public onSet: EventEmitter<any> = new EventEmitter();
+  @Output() public onSet: EventEmitter<any> = new EventEmitter();
 
   constructor(private el: ElementRef, private renderer: Renderer) {
     // console.log(el)
@@ -34,15 +33,12 @@ export class MobiscrollDirective implements OnInit {
         theme: 'mobiscroll',
         lang: 'zh',
         display: 'bottom',
-        mode: $dom.prev().val(),
+        // mode: $dom.prev().val(),
         // minWidth: 100,
         onSet: function(event: any, inst: any) {
           let valArr = inst.getVal().split(':'),
               val = $.trim(valArr[1]);
           self.onSet.emit(val);
-        },
-        onTabChange: function (event: any, inst: any) {
-          console.log(event)
         }
       });
 
@@ -50,8 +46,12 @@ export class MobiscrollDirective implements OnInit {
 
   }
 
-  onInputChange($event: any) {
-    console.log($event)
+  // onInputChange($event: any) {
+  //   console.log($event)
+  // }
+
+  @HostListener('ngModelChange') onChange($event: any) {
+    console.log('ngModelChange')
   }
 
 /*  

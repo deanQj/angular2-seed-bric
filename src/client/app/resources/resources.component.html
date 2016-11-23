@@ -9,8 +9,13 @@
 
     <div class="condition-search weui-flex">
         <div class='products'>
-            <select id="sel-product" [mobiscroll]="Resources.keyword" (onSet)="Resources.keyword=$event;changeList()" [(ngModel)]="Resources.keyword" [hidden]="true" >
-              <option [ngValue]="value.id" *ngFor="let value of Categorys">{{value.name}}</option>
+            <select id="sel-product" name="keyword"
+                    mobiscroll
+                    (onSet)="Resources.keyword=$event;changeList()" 
+                    [(ngModel)]="Resources.keyword" 
+                    [hidden]="true"
+                >
+              <option *ngFor="let value of Categorys" [ngValue]="value.id">{{value.name}}</option>
             </select>
             <em class="vertical-middle">产品筛选</em><span class="icon-arrow-right"></span>
         </div>
@@ -18,8 +23,8 @@
         <div class='weui-flex__item'>
             <div class="search-box">
               <em></em>
-              <input type="text" placeholder="输入关键字" 
-                     [(ngModel)]="Resources.category"  
+              <input type="text" name="category" placeholder="输入关键字" 
+                     [(ngModel)]="Resources.category"
                      (focus)="seachTextFocus($event)"
                      (blur)="seachTextBlur($event)" />
               <i (click)="seachTextClear($event);"  [hidden]="!Resources.category"></i>
@@ -34,24 +39,39 @@
                 <a href="javascript:void(0);" class="inline-block">综合排序</a>
             </dd>
             <dd class="weui-flex__item">
-                <select id="sel-default" [mobiscroll]="Resources.adjusting" (onSet)="Resources.adjusting=$event;changeList()" [(ngModel)]="Resources.adjusting" [hidden]="true" >
-                    <option selected="selected" [ngValue]="0">默认</option>
-                    <option [ngValue]="1">上调</option>
-                    <option [ngValue]="2">平调</option>
-                    <option [ngValue]="3">下调</option>
+                <select id="sel-default" name="adjusting"
+                        mobiscroll
+                        (onSet)="Resources.adjusting=$event;changeList()"
+                        [(ngModel)]="Resources.adjusting"
+                        [hidden]="true"
+                    >
+                    <option [ngValue]="'0'">默认</option>
+                    <option [ngValue]="'1'">上调</option>
+                    <option [ngValue]="'2'">平调</option>
+                    <option [ngValue]="'3'">下调</option>
                 </select>
             </dd>
             <dd class="weui-flex__item">
-                <select id="sel-date" [mobiscroll]="Resources.created" (onSet)="Resources.created=$event;changeList()" [(ngModel)]="Resources.created" [hidden]="true">
-                    <option selected="selected" [ngValue]="0">全部</option>
-                    <option [ngValue]="1">今天</option>
-                    <option [ngValue]="2">昨天</option>
-                    <option [ngValue]="3">近三天</option>
+                <select id="sel-date" name="created"
+                        mobiscroll
+                        (onSet)="Resources.created=$event;changeList()" 
+                        [(ngModel)]="Resources.created" 
+                        [hidden]="true"
+                    >
+                    <option [ngValue]="'0'">全部</option>
+                    <option [ngValue]="'1'">今天</option>
+                    <option [ngValue]="'2'">昨天</option>
+                    <option [ngValue]="'3'">近三天</option>
                 </select>
             </dd>
             <dd class="weui-flex__item">
-                <select id="sel-city" [mobiscroll]="Resources.cityid" (onSet)="Resources.cityid=$event;changeList()" [(ngModel)]="Resources.cityid" [hidden]="true">
-                    <option [ngValue]="value.id" *ngFor="let value of Citys">{{value.name}}</option>
+                <select id="sel-city" name="cityid"
+                        mobiscroll
+                        (onSet)="Resources.cityid=$event;changeList()"
+                        [(ngModel)]="Resources.cityid" 
+                        [hidden]="true"
+                    >
+                    <option *ngFor="let value of Citys" [ngValue]="value.id">{{value.name}}</option>
                 </select>
             </dd>
         </dl>
@@ -97,7 +117,7 @@
         </div>
     </div>
 
-    <div class="product_none" *ngIf="Resources.total == 0" [hidden]="Resources.isLoader">
+    <div class="text-center" *ngIf="Resources.total == 0" [hidden]="Resources.isLoader">
         <img src="/assets/img/common/person.png" class="nonemesg">
     </div>
 
