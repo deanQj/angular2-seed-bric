@@ -7,10 +7,11 @@
 /* VENDORS - 第三方&重定义
 ========================================================================== */
 
+@import "../scss/vendors-extensions/mobiscroll.custom";
 @import "../scss/vendors/weui.min";
+@import "../scss/vendors-extensions/weui.custom";
 @import "../scss/vendors/swiper.min";
 @import "../scss/vendors-extensions/swiper.custom";
-@import "../scss/vendors-extensions/mobiscroll.custom";
 
 
 /* HELPERS - 工具

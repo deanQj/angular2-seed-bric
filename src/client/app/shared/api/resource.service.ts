@@ -52,6 +52,20 @@ export class ResourceService {
                     .catch(this.handleError);
   }
 
+  /**
+   * 接口-根据id获取资源单信息
+   * @return {Observable<IF_result>} [description]
+   */
+  getResourcesReview(id: any): Observable<IF_result> {
+    let url = 'http://www.16988.com/ajaxs/getResourcesReview';
+    var params = new URLSearchParams();
+    params.set('id', id);
+    params.set('callback', 'JSONP_CALLBACK');
+    return this.jsonp.get(url, { search: params })
+                    .map((res: Response) => res.json())
+                    .catch(this.handleError);
+  }
+
 
   /**
     * Handle HTTP error

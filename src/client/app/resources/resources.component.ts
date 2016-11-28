@@ -67,11 +67,7 @@ export class ResourcesComponent implements OnInit {
    */
   constructor(
     public resourceService: ResourceService
-    ) {}
-
-  modelChange() {
-    console.log(123)
-  }
+  ) {}
 
 
   /**

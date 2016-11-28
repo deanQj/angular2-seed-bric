@@ -1,0 +1,13 @@
+/* button 扩展
+========================================================================== */
+.weui-btn_orange {
+  background-color: #ff7726;
+}
+
+.weui-btn_disabled {
+
+  &.weui-btn_orange {
+    background-color: #fda977;
+  }
+
+}

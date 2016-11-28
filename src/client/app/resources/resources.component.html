@@ -15,7 +15,7 @@
                     [(ngModel)]="Resources.keyword" 
                     [hidden]="true"
                 >
-              <option *ngFor="let value of Categorys" [ngValue]="value.id">{{value.name}}</option>
+              <option *ngFor="let value of Categorys" [value]="value.id">{{value.name}}</option>
             </select>
             <em class="vertical-middle">产品筛选</em><span class="icon-arrow-right"></span>
         </div>
@@ -45,10 +45,10 @@
                         [(ngModel)]="Resources.adjusting"
                         [hidden]="true"
                     >
-                    <option [ngValue]="'0'">默认</option>
-                    <option [ngValue]="'1'">上调</option>
-                    <option [ngValue]="'2'">平调</option>
-                    <option [ngValue]="'3'">下调</option>
+                    <option [value]="'0'">默认</option>
+                    <option [value]="'1'">上调</option>
+                    <option [value]="'2'">平调</option>
+                    <option [value]="'3'">下调</option>
                 </select>
             </dd>
             <dd class="weui-flex__item">
@@ -58,10 +58,10 @@
                         [(ngModel)]="Resources.created" 
                         [hidden]="true"
                     >
-                    <option [ngValue]="'0'">全部</option>
-                    <option [ngValue]="'1'">今天</option>
-                    <option [ngValue]="'2'">昨天</option>
-                    <option [ngValue]="'3'">近三天</option>
+                    <option [value]="'0'">全部</option>
+                    <option [value]="'1'">今天</option>
+                    <option [value]="'2'">昨天</option>
+                    <option [value]="'3'">近三天</option>
                 </select>
             </dd>
             <dd class="weui-flex__item">
@@ -71,7 +71,7 @@
                         [(ngModel)]="Resources.cityid" 
                         [hidden]="true"
                     >
-                    <option *ngFor="let value of Citys" [ngValue]="value.id">{{value.name}}</option>
+                    <option *ngFor="let value of Citys" [value]="value.id">{{value.name}}</option>
                 </select>
             </dd>
         </dl>
