@@ -1,49 +1,51 @@
 <section id="QuotedPrice" class="container" [ngStyle]="{'min-height': documentMinHeight}">
 
-    <div class="weui-toptips weui-toptips_warn js_tooltips" style="display: block;">错误提示</div>
+    <div class="weui-toptips weui-toptips_warn js_tooltips" style="display: none;">错误提示</div>
 
     <div class="head weui-flex" [hidden]="IsWeiXin">
         <img src="/assets/img/common/app-logo.png" alt="">
         <h3 class="weui-flex__item">委托找货</h3>
     </div>
 
-    <form action="#" name="quotedPriceForm" class="d-form">
-        <!-- <dl>
-            <dt>
-                <input type="text" name="phone" placeholder="请输入您的联系方式"  maxlength="11" required="required" ismobile />
-                <p class="d-error" ng-show="invalid && (quotedPriceForm.phone.$error.ismobile || quotedPriceForm.phone.$error.required)">手机号不能为空或格式不正确！</p>
-            </dt>
-            <dt class="dt-textarea">
-                <textarea name="content" id="" rows="5" placeholder="写下您的真实需求，包括产品、规格等，收到后我们会立刻给您回电确认、剩下的就交给我们吧"  maxlength="80" required="required"></textarea>
-                <p class="d-error" ng-show="invalid && (quotedPriceForm.content.$error.required)">内容不能为空！</p>
-            </dt>
-        </dl> -->
+    <form [formGroup]="quotedPriceForm">
 
-        <div class="weui-cells weui-cells_form weui-cell_warn">
+        <div class="weui-cells weui-cells_form" [ngClass]="{'weui-cell_warn':formErrors.phone}">
             <div class="weui-cell">
                 <div class="weui-cell__bd">
-                    <input class="weui-input" type="text" name="phone" placeholder="请输入您的联系方式" axlength="11" required 
-                        [ngModel]="QuotedPrice.phone" 
-                        (ngModelChange)="text($event)"
+                    <input class="weui-input" type="text" placeholder="请输入您的联系方式"
+                            formControlName="phone" required
                         >
                 </div>
-                <div class="weui-cell__ft">
+                <div class="weui-cell__ft" *ngIf="formErrors.phone">
                     <i class="weui-icon-warn"></i>
                 </div>
             </div>
         </div>
+        <div class="weui-cells__tips weui-cell_warn">
+            <span [hidden]="!formErrors.phone">{{ formErrors.phone }}</span>
+        </div>
 
-        <div class="weui-cells weui-cells_form">
+        <div class="weui-cells weui-cells_form" [ngClass]="{'weui-cell_warn':formErrors.content}">
             <div class="weui-cell">
                 <div class="weui-cell__bd">
-                    <textarea class="weui-textarea" name="content" placeholder="请输入文本" rows="3" required [(ngModel)]="QuotedPrice.content"></textarea>
-                    <div class="weui-textarea-counter"><span>0</span>/200</div>
+                    <textarea class="weui-textarea" name="content" placeholder="请输入文本" rows="3"
+                            [ngModel]="content"
+                            formControlName="content" required
+                        ></textarea>
+                    <div class="weui-textarea-counter"><span>{{contentLength}}</span>/200</div>
                 </div>
             </div>
         </div>
+        <div class="weui-cells__tips weui-cell_warn">
+            <span [hidden]="!formErrors.content">{{ formErrors.content }}</span>
+        </div>
 
-        <!-- <a href="javascript:;" class="weui-btn weui-btn_orange weui-btn_disabled send-msg">提交需求</a> -->
-        <button type="submit" class="weui-btn weui-btn_orange weui-btn_disabled send-msg">提交需求</button>
+        <button type="submit" class="weui-btn weui-btn_orange send-msg" 
+                [disabled]="quotedPriceForm.invalid"
+                [ngClass]="{'weui-btn_disabled':quotedPriceForm.invalid}"
+                (click)="onSubmit()"
+            >提交需求</button>
+
     </form>
 
 
