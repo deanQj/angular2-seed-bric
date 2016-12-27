@@ -29,7 +29,6 @@
             <div class="weui-cell">
                 <div class="weui-cell__bd">
                     <textarea class="weui-textarea" name="content" placeholder="请输入文本" rows="3"
-                            [ngModel]="content"
                             formControlName="content" required
                         ></textarea>
                     <div class="weui-textarea-counter"><span>{{contentLength}}</span>/200</div>
@@ -63,3 +62,5 @@
     </div>
 
 </section>
+
+<sd-dialog [message]="alertMessage"></sd-dialog>

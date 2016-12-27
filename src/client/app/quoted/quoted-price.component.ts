@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
+import { IF_result } from '../shared/index';
+import { MallService } from '../shared/api/mall.service';
 import { mobileValidator } from '../shared/directives/valid.directive';
 
 /**
@@ -34,6 +36,7 @@ export class QuotedPriceComponent implements OnInit {
   /**
    * 属性
    */
+  alertMessage: string;
   IsWeiXin: boolean = false;
   footState: boolean = false;
   documentMinHeight: string;
@@ -47,7 +50,10 @@ export class QuotedPriceComponent implements OnInit {
   /**
    * 构造函数 - 创建服务的实例
    */
-  constructor(private fb: FormBuilder) {}
+  constructor(
+    private fb: FormBuilder, 
+    private mallService: MallService
+    ) {}
 
 
   /**
@@ -59,23 +65,41 @@ export class QuotedPriceComponent implements OnInit {
     this.buildForm();
   }
 
+
+  /**
+   * content - input
+   * @param {any} control [description]
+   */
   inputContent(control: any) {
-    // console.log(control)
     let text = control.value;
     // let text = this.quotedPriceForm.get('content').value;
     if (!text) return ;
-    if (text.length <= 10) {
+    if (text.length <= 200) {
       this.contentLength = text.length;
     } else {
-      this.content = text.substr(0, text.length-1);
-      console.log("超出")
+      control.setValue(text.substr(0, 200));
     }
   }
 
 
+  /**
+   * 表单提交
+   */
   onSubmit() { 
     if (this.quotedPriceForm.valid) {
-      console.log(this.quotedPriceForm.value)
+      // console.log(this.quotedPriceForm.value)
+
+      this.mallService.saveMessage(this.quotedPriceForm.value)
+        .subscribe(
+          result => { 
+            // console.log(result);
+            if (result.success == "0") {
+              this.alertMessage = "提交成功！";
+              this.quotedPriceForm.reset();
+            }
+          },
+          error =>  this.alertMessage = <any>error
+        );
     }
   }
 
@@ -128,6 +152,7 @@ export class QuotedPriceComponent implements OnInit {
     'phone': '',
     'content': ''
   };
+
 
   /**
    * form元素 - 验证失败的message对象

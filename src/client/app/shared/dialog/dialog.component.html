@@ -1,0 +1,9 @@
+<div class="js_dialog" id="DialogMsg" *ngIf="message" >
+    <div class="weui-mask"></div>
+    <div class="weui-dialog">
+        <div class="weui-dialog__bd">{{message}}</div>
+        <div class="weui-dialog__ft">
+            <a href="javascript:;" class="weui-dialog__btn weui-dialog__btn_primary" (click)="close()">知道了</a>
+        </div>
+    </div>
+</div>
