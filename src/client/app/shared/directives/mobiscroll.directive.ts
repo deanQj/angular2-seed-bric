@@ -36,9 +36,7 @@ export class MobiscrollDirective implements OnInit {
         // mode: $dom.prev().val(),
         // minWidth: 100,
         onSet: function(event: any, inst: any) {
-          let valArr = inst.getVal().split(':'),
-              val = $.trim(valArr[1]);
-          self.onSet.emit(val);
+          self.onSet.emit(inst.getVal());
         }
       });
 
@@ -50,9 +48,9 @@ export class MobiscrollDirective implements OnInit {
   //   console.log($event)
   // }
 
-  @HostListener('ngModelChange') onChange($event: any) {
-    console.log('ngModelChange')
-  }
+  // @HostListener('ngModelChange') onChange($event: any) {
+  //   console.log('ngModelChange')
+  // }
 
 /*  
   @HostListener('mouseenter') onMouseEnter() {

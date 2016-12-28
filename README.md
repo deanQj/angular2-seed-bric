@@ -4,7 +4,6 @@
 [![Build Status](https://travis-ci.org/mgechev/angular-seed.svg?branch=master)](https://travis-ci.org/mgechev/angular-seed)
 [![Build Status](https://ci.appveyor.com/api/projects/status/jg5vg36w0klpa00e/branch/master?svg=true)](https://ci.appveyor.com/project/mgechev/angular2-seed)
 [![Join the chat at https://gitter.im/mgechev/angular2-seed](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/mgechev/angular2-seed?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
-[![MIT license](http://img.shields.io/badge/license-MIT-brightgreen.svg)](http://opensource.org/licenses/MIT)
 [![Dependency Status](https://david-dm.org/mgechev/angular-seed.svg)](https://david-dm.org/mgechev/angular-seed)
 [![devDependency Status](https://david-dm.org/mgechev/angular-seed/dev-status.svg)](https://david-dm.org/mgechev/angular-seed#info=devDependencies)
 
@@ -49,9 +48,9 @@ $ npm start
 # api document for the app
 # npm run build.docs
 
-#generate api documentation
+# generate api documentation
 $ npm run compodoc
-$ npm serve.compodoc
+$ npm run serve.compodoc
 
 
 # to start deving with livereload site and coverage as well as continuous testing
@@ -327,6 +326,9 @@ Forks of this project demonstrate how to extend and integrate with other librari
 │       │   └── system-config.ts
 │       ├── assets
 │       │   ├── data.json
+│       │   └── favicon
+│       │       ├── favicon-DEV.ico
+│       │       └── favicon-PROD.ico
 │       │   └── svg
 │       │       └── more.svg
 │       ├── css
@@ -341,8 +343,10 @@ Forks of this project demonstrate how to extend and integrate with other librari
 │   │   ├── banner-256.txt
 │   │   ├── banner.txt
 │   │   ├── project.config.ts  <- configuration of the specific project
+│   │   ├── project.tasks.json <- override composite gulp tasks
+│   │   ├── seed.config.ts     <- generic configuration of the seed project
 │   │   ├── seed.config.interfaces.ts
-│   │   └── seed.config.ts     <- generic configuration of the seed project
+│   │   ├── seed.tasks.json    <- default composite gulp tasks
 │   │   └── seed.tslint.json   <- generic tslint configuration of the seed project
 │   ├── config.ts              <- exported configuration (merge both seed.config and project.config, project.config overrides seed.config)
 │   ├── debug.ts
@@ -529,51 +533,74 @@ Forks of this project demonstrate how to extend and integrate with other librari
 Here are all the awesome guys who are helping to make the project's wiki even better!
 
 ```
-40  Minko Gechev
-22  Clayton K. N. Passos
+56  Minko Gechev
+35  Clayton K. N. Passos
 15  Shyam-Chen
 14  Vincent van Proosdij
- 8  matthew harwood
- 8  Christian Dobert
  8  Robert van Kints
+ 8  Christian Dobert
+ 8  matthew harwood
  6  Ludovic HENIN
+ 6  ruffiem
  5  Attila Egyed
- 4  davidgfolch
+ 4  hhubik
  4  Chris Kapilla
- 3  Stefan Schüller
+ 4  davidgfolch
+ 3  Robert Stoll
+ 3  Brian Kotek
  3  Patrick Hillert
  3  Ezequiel Cicala
- 3  Brian Kotek
- 2  Nathan Walker
+ 3  Stefan Schüller
+ 2  Brooke Smith
+ 2  Simon Hampton
+ 2  Giovanni Candido da Silva
+ 2  Hank Ehly
+ 2  Yannick Koehler
+ 2  Cy Klassen
+ 2  Amal Shehu
+ 2  Joshua Wiens
  2  Dinsitro
  2  Drake Wilson
- 2  Simon Hampton
- 2  Yannick Koehler
- 2  Giovanni Candido da Silva
- 2  hhubik
- 2  Joshua Wiens
- 2  Cy Klassen
+ 2  omerfarukyilmaz
+ 2  Nathan Walker
+ 2  valentin
+ 2  zealitude
+ 1  samuelfernandez
+ 1  silicakes
  1  zcsongor
+ 1  Adam Johannesmeyer
+ 1  陳彥澄
  1  Ameer Nuri
  1  Ankit Kamboj
  1  BouncingBit
+ 1  Charlie Hua
  1  Dang Tung
+ 1  EBIA
  1  Eddie Sun
  1  Enrico Secondulfo
  1  Eugene Serkin
+ 1  Frido Koch
  1  Ishara Samantha
+ 1  Jack Morrissey
+ 1  Jesper Rønn-Jensen
+ 1  Kirill Zdornyy
+ 1  Marc-André Barbeau
  1  Myrmex
  1  Pol Stafford
  1  Raphael Schmitt
- 1  Robert Stoll
  1  Sebastian Fuss
  1  Sebastien de Salvador
+ 1  Simon Altschuler
+ 1  Sylvain Francois
  1  The Ult
+ 1  Valentyn Yakymenko
  1  Yonet
+ 1  ganesansays
+ 1  gforceg
  1  graham
  1  kiuka
- 1  silicakes
- 1  Adam Johannesmeyer
+ 1  mcchae7
+ 1  neridonk
 ```
 
 # Change Log

@@ -1,7 +1,9 @@
 import { Injectable } from '@angular/core';
 import { Response, Jsonp, URLSearchParams } from '@angular/http';
-import { IF_result } from './interface';
 import { Observable } from 'rxjs/Observable';
+
+import { IF_result } from './interface';
+import { MainService } from './main.service'
 
 import 'rxjs/add/observable/throw';
 // import 'rxjs/add/operator/do';  // for debugging
@@ -10,21 +12,23 @@ import 'rxjs/add/observable/throw';
  * 接口 - 资源单
  */
 @Injectable()
-export class ResourceService {
+export class ResourceService extends MainService {
 
   /**
    * Creates a new NameListService with the injected Jsonp.
-   * @param {Jsonp} private jsonp [description]
+   * @param {Jsonp} public jsonp [description]
    * @constructor
    */
-  constructor(private jsonp: Jsonp) {}
+  constructor(public jsonp: Jsonp) {
+    super(jsonp);
+  }
 
   /**
    * 接口-获取城市
    * @return {Observable<IF_result>} [description]
    */
   getResourceData(): Observable<IF_result> {
-    let url = 'http://www.16988.com/ajaxs/getResourceData';
+    let url = this.$API+'ajaxs/getResourceData';
     var params = new URLSearchParams();
     params.set('callback', 'JSONP_CALLBACK');
     return this.jsonp.get(url, { search: params })
@@ -37,7 +41,7 @@ export class ResourceService {
    * @return {Observable<IF_result>} [description]
    */
   getResourceList(data: any): Observable<IF_result> {
-    let url = 'http://www.16988.com/ajaxs/getResourceList';
+    let url = this.$API+'ajaxs/getResourceList';
     var params = new URLSearchParams();
     params.set('limit', '6');
     params.set('page', data.page);
@@ -52,17 +56,19 @@ export class ResourceService {
                     .catch(this.handleError);
   }
 
-
   /**
-    * Handle HTTP error
-    */
-  private handleError (error: any) {
-    // In a real world app, we might use a remote logging infrastructure
-    // We'd also dig deeper into the error to get a better message
-    let errMsg = (error.message) ? error.message :
-      error.status ? `${error.status} - ${error.statusText}` : 'Server error';
-    console.error(errMsg); // log to console instead
-    return Observable.throw(errMsg);
+   * 接口-根据id获取资源单信息
+   * @return {Observable<IF_result>} [description]
+   */
+  getResourcesReview(id: any): Observable<IF_result> {
+    let url = this.$API+'ajaxs/getResourcesReview';
+    var params = new URLSearchParams();
+    params.set('id', id);
+    params.set('callback', 'JSONP_CALLBACK');
+    return this.jsonp.get(url, { search: params })
+                    .map((res: Response) => res.json())
+                    .catch(this.handleError);
   }
+
 }
 

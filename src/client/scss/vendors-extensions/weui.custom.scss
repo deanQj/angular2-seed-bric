@@ -1,0 +1,20 @@
+/* button 扩展
+========================================================================== */
+.weui-btn_orange {
+  background-color: #ff7726;
+}
+
+.weui-btn_disabled {
+
+  &.weui-btn_orange {
+    background-color: #fda977;
+  }
+
+}
+
+
+/* form 扩展
+========================================================================== */
+.weui-cells__tips {
+  height: 22px;
+}
